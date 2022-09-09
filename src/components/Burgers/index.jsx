@@ -1,31 +1,27 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
+
 import { Item } from './Item'
 
+import { BURGERS } from '../../store/slices/burgers'
+
 import classes from './styles.module.scss'
-import { BURGERS } from './constants'
 
+export const Burgers = () => {
+  const burgers = useSelector(BURGERS)
 
-
-
-
- 
-export const Burgers = () => (
-  <div className={classes.burgers}>
-    {BURGERS.map((item) => (
-      <Item
-      key={item.id}
-        id={item.id}
-        name={item.name}
-        compound={item.compound}
-        photo={item.photo}
-        weight={item.weight}
-        
+  return (
+    <div className={classes.burgers}>
+      {burgers.map((item) => (
+        <Item
+          key={item.id}
+          id={item.id}
+          name={item.name}
+          compound={item.compound}
+          photo={item.photo}
+          weight={item.weight}
         />
-      
-
-    ))}
-    
-  </div>
-  
-)
-
+      ))}
+    </div>
+  )
+}

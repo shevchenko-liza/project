@@ -1,36 +1,53 @@
-import carts from '../../pages/Basket/photo/path.png'
-import classes from '../../pages/Basket/styles.module.scss'
-import React,{useState} from 'react'
+import React, { useState } from 'react'
+import { useSelector } from 'react-redux'
 
+import { BasketHeader } from './BasketHeader'
+import { BasketFooter } from './BasketFooter'
+import { FreeDelivery } from './FreeDelivery'
+import { Box } from './Box'
+import { Delivery } from './Delivery'
 
-import {BasketHeader} from '../../pages/Basket/BasketHeader'
-import {BasketFooter} from '../../pages/Basket/BasketFooter'
-import {FreeDelivery} from '../../pages/Basket/FreeDelivery'
-import {Box} from '../../pages/Basket/Box'
-import {Delivery} from '../../pages/Basket/Delivery'
-import icon2 from '../Basket/photo/phon.png'
+import carts from './photo/path.png'
+import icon2 from './photo/phon.png'
+
+import { BURGERS } from '../../store/slices/burgers'
+import { CART } from '../../store/slices/cart'
+
+import classes from './styles.module.scss'
+import clsx from 'clsx'
+
 export const Basket = () => {
-    
-    let [ cart,setCart ] = useState(false)
+  const cart = useSelector(CART)
+  const burgers = useSelector(BURGERS)
 
+  let [open, setOpen] = useState(false)
 
-    return (
-     <div>
-         <span >
-           <img  src={icon2} alt="" className={classes.phon}  />
-         </span>
-           <img  src={carts} alt="" onClick={()=>setCart(cart = !cart)} className={classes.path}  />
-   {cart && (
-          <div className={classes.shop}> 
-          <div className={classes.basket}>Корзина</div>
-            <BasketHeader/>
-            <FreeDelivery/>
-            <Delivery/>
-            <Box/>
-            <BasketFooter/>
-            </div> 
-        )} 
-  </div>
-    )
-  }
-  
+  console.log({ cart, burgers });
+
+  return (
+    <div className={clsx(classes.backdrop, { [classes.hide]: !open })}>
+      <div className={clsx(classes.cart, { [classes.open]: open })}>
+        <button className={classes.toggler} onClick={() => setOpen(open => !open)}>
+          toggle
+        </button>
+        <div className={classes.basket}>Корзина</div>
+        {Object.keys(cart.list).map(burgerId => {
+          const burger = burgers.find(burger => +burger.id === +burgerId)
+
+          if (!burger) {
+            return null
+          }
+
+          return (
+            <p>{burger.name}&nbsp;{cart.list[burgerId].count}</p>
+          )
+        })}
+        <BasketHeader />
+        {/* <FreeDelivery />
+          <Delivery />
+          <Box />
+          <BasketFooter /> */}
+      </div>
+    </div>
+  )
+}
