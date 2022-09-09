@@ -1,0 +1,57 @@
+.mainPhoto {
+    height: 350px;
+    width: 1200px;
+    margin-top: 50px;
+}
+
+.main {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.mainText {
+    height: 126px;
+    width: 423px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0px;
+    margin-left: 77px;
+    transform: translateY(-280px);
+    color: white;
+}
+
+.button {
+    height: 43px;
+    width: 223px;
+    border-radius: 0px;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.mainButton {
+    transform: translateY( -246px);
+    padding-left: 77px;
+}
+
+.order {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.mainDishes {
+    height: 42px;
+    width: 404px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0px;
+    margin-left: 385px;
+    color: #474747;
+    transform: translateY(-95px);
+}

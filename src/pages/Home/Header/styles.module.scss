@@ -1,0 +1,48 @@
+.photo {
+    height: 900px;
+    width: 100%;
+    margin-top: 30px;
+    display: block;
+}
+
+.iconBox {
+    width: 100%;
+}
+
+.width {
+    margin: auto;
+    max-width: 600px;
+}
+
+.text {
+    position: absolute;
+    max-width: 610px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+    margin-top: 350px;
+    transform: translateX(75px);
+}
+
+.button {
+    height: 48px;
+    width: 173px;
+    margin-left: 24px;
+    background-color: #10B4A4;
+    border-color: #10B4A4;
+    cursor: pointer;
+}
+
+.mainButton {
+    position: absolute;
+    transform: translateY(470px);
+    margin-left: 130px;
+}
+
+.order {
+    color: white;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 500;
+}

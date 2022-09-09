@@ -1,0 +1,108 @@
+    .burger {
+        margin: auto;
+        max-width: 1200px;
+        height: 375px;
+        margin-top: 217px;
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+    }
+    
+    .photoBox {
+        width: 100%;
+    }
+    
+    .photo {
+        height: 305px;
+        width: 368px;
+        display: block;
+    }
+    
+    .name {
+        height: 28px;
+        width: 395px;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 500;
+        text-align: left;
+        color: #474747;
+        margin-bottom: 12px;
+    }
+    
+    .compaunds {}
+    
+    .weight {
+        width: 101px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        color: #D8D8D8;
+    }
+    
+    .text {
+        margin-top: 21px;
+        margin-bottom: 36px;
+        width: 525px;
+        left: 375px;
+        top: 130px;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        color: #363636;
+    }
+    
+    .price {
+        padding-left: 20px;
+        transform: translateY(83px);
+        position: absolute;
+        height: 28px;
+        width: 175px;
+        color: #474747;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0px;
+    }
+    
+    .compaunds {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0px;
+        list-style: none
+    }
+    
+    .title {
+        margin-top: 140px;
+        height: 42px;
+        width: 404px;
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 42px;
+        letter-spacing: 0px;
+        color: #474747;
+    }
+    
+    .border {
+        height: 315px;
+        width: 250px;
+        border-radius: 0px;
+        border: 1px dashed #D8D8D8;
+        margin-left: 930px;
+        transform: translateY(-330px);
+    }
+    
+    .compounds {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0px;
+        list-style: none;
+        height: 210px;
+        width: 200px;
+    }
