@@ -7,23 +7,17 @@ import { FreeDelivery } from './FreeDelivery'
 import { Box } from './Box'
 import { Delivery } from './Delivery'
 
-import carts from './photo/path.png'
-import icon2 from './photo/phon.png'
-
-import { BURGERS } from '../../store/slices/burgers'
+import { CATALOG } from '../../store/slices/catalog'
 import { CART } from '../../store/slices/cart'
-import {DISH} from '../../store/slices/dish'
- 
+
 import classes from './styles.module.scss'
 import clsx from 'clsx'
 
 export const Basket = () => {
   const cart = useSelector(CART)
-  const burgers = useSelector(BURGERS)
-  const dish=useSelector(DISH)
+  const catalog = useSelector(CATALOG)
+  // const dish = catalog.filter(product => product.recommended)
   let [open, setOpen] = useState(false)
-
-  console.log({ cart, burgers });
 
   return (
     <div className={clsx(classes.backdrop, { [classes.hide]: !open })}>
@@ -33,7 +27,7 @@ export const Basket = () => {
         </button>
         <div className={classes.basket}>Корзина</div>
         {Object.keys(cart.list).map(burgerId => {
-          const burger = burgers.find(burger => +burger.id === +burgerId)
+          const burger = catalog.find(burger => +burger.id === +burgerId)
 
           if (!burger) {
             return null
@@ -45,9 +39,9 @@ export const Basket = () => {
         })}
         <BasketHeader />
         <FreeDelivery />
-          <Delivery />
-           <Box />
-        <BasketFooter /> 
+        <Delivery />
+        <Box />
+        <BasketFooter />
       </div>
     </div>
   )

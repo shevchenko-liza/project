@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Сет«Z-Бургер»",
+    "compound": [
+      "бургер",
+      "картофель",
+      "сметанный соус"
+    ],
+    "photo": "/images/burgers/burger1.png",
+    "weight": "400 грамм",
+    "discription": "lorem10",
+    "kind": "burgers",
+    "recommended": true
+  },
+  {
+    "id": 2,
+    "name": "Бургер с мясом и сыром«Чеддер»",
+    "photo": "/images/burgers/burger2.png",
+    "burger_photo": "/images/burgers/Bitmap.png",
+    "weight": "от 310 грамм",
+    "text": "Лень приготовить еду самому?Покупайте Бургер с мясом и сыром «Чеддер» из заведения \"БарбеQ\".Это вкусное, сытное, а также полезное блюдо, приготовленное из натуральных продуктов.",
+    "price": "от 80 грн",
+    "compound": [
+      "булочка",
+      "котлета",
+      "сыр «Чеддер»",
+      "помидор",
+      "огурец",
+      "листья салата",
+      "лук",
+      "соус",
+      "кетчуп"
+    ],
+    "kind": "burgers",
+    "recommended": true
+  },
+  {
+    "id": 3,
+    "name": "«Дабл-бургер»",
+    "compound": [
+      "двойной сыр",
+      "две котлеты"
+    ],
+    "photo": "/images/burgers/burger3.png",
+    "weight": "200 грамм",
+    "kind": "burgers",
+    "recommended": false
+  },
+  {
+    "id": 4,
+    "name": "Сыр на мангале с лимонно-медовой заправкой",
+    "price": "29 грн",
+    "photo": "/images/burgers/icon1.png",
+    "kind": "brazier",
+    "recommended": true
+  },
+  {
+    "id": 5,
+    "name": "Куриный бургер-сет ",
+    "price": "60 грн",
+    "photo": "/images/burgers/icon2.jpg",
+    "kind": "burgers",
+    "recommended": true
+  },
+  {
+    "id": 6,
+    "name": "Большой денер",
+    "price": "29 грн",
+    "photo": "/images/burgers/icon3.png",
+    "kind": "brazier",
+    "recommended": true
+  },
+  {
+    "id": 7,
+    "name": "Большое мясо в лаваше",
+    "price": "37 грн",
+    "photo": "/images/burgers/icon4.png",
+    "kind": "brazier",
+    "recommended": true
+  },
+  {
+    "id": 8,
+    "name": "Картофель с костра",
+    "price": "25 грн",
+    "photo": "/images/burgers/icon5.png",
+    "kind": "brazier",
+    "recommended": true
+  },
+  {
+    "id": 9,
+    "name": "Шашлык из свинины «BBQ» ",
+    "price": "54 грн",
+    "photo": "/images/burgers/icon6.png",
+    "kind": "brazier",
+    "recommended": true
+  }
+]

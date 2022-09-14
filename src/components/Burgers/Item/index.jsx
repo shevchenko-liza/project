@@ -43,7 +43,7 @@ export const Item = ({ name, compound, weight, photo, id }) => (
     </div>
     <div className={classes.infoBox}>
       <Link to={generatePath("/burgers/:id", { id })} className={classes.name}>{name} </Link>
-      <p className={classes.compound}>Состав: {compound.join(', ')}</p>
+      <p className={classes.compound}>Состав: {(Array.isArray(compound) ? compound : []).join(', ')}</p>
       <span className={classes.weight}>{weight}</span>
 
       <Order id={id} />

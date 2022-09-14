@@ -8,17 +8,21 @@ import { Text } from '../../components/Text'
 
 import classes from '../../pages/Burger/styles.module.scss'
 
-import { BURGERS } from '../../store/slices/burgers'
+import { CATALOG } from '../../store/slices/catalog'
 
 export const BurgerPage = () => {
   const { id } = useParams()
 
-  const burgers = useSelector(BURGERS)
+  const burgers = useSelector(CATALOG)
   const burger = burgers.find(burger => burger.id === parseInt(id))
+
+  if (!burger) {
+    return false
+  }
 
   return (
     <div>
-      <div className={classes.burger} >
+      <div className={classes.burger}>
         <div className={classes.photoBox}>
           <img className={classes.photo} src={burger.burger_photo} alt="" />
         </div>
@@ -31,14 +35,18 @@ export const BurgerPage = () => {
           <Order id={id} />
         </div>
 
-        <div className={classes.border}>
-          <span>Состав</span>
-          <ul>
-            {burger.compound.map(item => (
-              <li className={classes.compounds}>{item}</li>
-            ))}
-          </ul>
-        </div>
+        {Array.isArray(burger.compound)
+          ? (
+            <div className={classes.border}>
+              <span>Состав</span>
+              <ul>
+                {burger.compound.map(item => (
+                  <li className={classes.compounds}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          )
+          : null}
         <span className={classes.title}>Рекомендуемые блюда</span>
       </div>
 

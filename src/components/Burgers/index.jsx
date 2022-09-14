@@ -1,14 +1,17 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { useParams } from 'react-router-dom'
 
 import { Item } from './Item'
 
-import { BURGERS } from '../../store/slices/burgers'
+import { CATALOG } from '../../store/slices/catalog'
 
 import classes from './styles.module.scss'
 
 export const Burgers = () => {
-  const burgers = useSelector(BURGERS)
+  const params = useParams()
+  const burgers = useSelector(CATALOG)
+    .filter(burger => burger.kind === params.category)
 
   return (
     <div className={classes.burgers}>
