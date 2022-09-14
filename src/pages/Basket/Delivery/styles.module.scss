@@ -1,41 +1,56 @@
 .time {
     height: 16px;
+    width: 109px;
+    font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
-    color: #474747;
-    padding-left: 50px;
-    transform: translateY(33px);
-    margin-bottom: 15px;
+    letter-spacing: 0px;
+    margin-top: 20px;
+    margin-left: 50px;
 }
 
 .timeDelivery {
-    padding-left: 47px;
-    padding-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 185px);
+    margin-left: 50px;
+}
+
+.delivery {
+    font-family: Roboto;
     font-size: 14px;
+    font-weight: 400;
+    color: #474747;
+    max-width: 134px;
+}
+
+.deliveryTime {
+    max-width: 71px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
 }
 
 .day {
     height: 35px;
     width: 95px;
-    border-color: #D8D8D8;
     border-radius: 5px;
-    margin-left: 325px;
-    transform: translateY(-40px);
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16px;
+    margin-left: 345px;
 }
 
 .timeDay {
     height: 35px;
     width: 75px;
-    border-color: #D8D8D8;
     border-radius: 5px;
-    margin-left: 425px;
-    transform: translateY(-75px);
+    margin-left: 445px;
+}
+
+.timeDayBlock {
+    margin-top: -35px;
+}
+
+.DayBlock {
+    margin-top: -45px;
 }

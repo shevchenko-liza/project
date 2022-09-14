@@ -2,8 +2,10 @@
 import React from 'react'
 import { Item } from './Item'
 
+import { useSelector } from 'react-redux'
+
 import classes from './styles.module.scss'
-import { DISH } from './dishConstants'
+import { DISH } from '../../store/slices/dish/dishConstants'
 
 
 export const Dish = () => (

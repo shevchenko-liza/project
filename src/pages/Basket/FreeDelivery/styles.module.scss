@@ -1,23 +1,38 @@
-.iconDelivery {
+.background {
+    max-width: 450px;
+    margin: auto;
+}
+
+.greenBack {
+    height: 54px;
+    width: 470px;
+    margin-top: 21px;
+    border-radius: 0px;
+}
+
+.text {
+    height: 16px;
+    width: 385px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #0A6A60;
+    margin-left: 61px;
+}
+
+.car {
     height: 22px;
     width: 30px;
-    margin-left: 70px;
-    transform: translateY(-43px);
+    border-radius: 0px;
 }
 
-.deliveryText {
-    padding-left: 111px;
-    height: 16px;
-    font-size: 14px;
-    line-height: 17px;
-    color: #0A6A60;
-    margin-top: -65px;
-    font-weight: 500;
+.cart {
+    margin-top: -20px;
+    margin-left: 16px;
 }
 
-.greenPhon {
-    height: 54px;
-    width: 450px;
-    margin-left: 50px;
-    margin-top: -22px;
+.textDelivery {
+    margin-top: -37px;
 }

@@ -4,14 +4,17 @@ import icon3 from '../Box/photo/box.png'
 export const Box=()=>{
     return(
         <div>
-          <span >
+     <div className={classes.background}>
            <img  src={icon2} alt="" className={classes.GreenPhon}  />  
-          </span>
           
-     <span>
+          
+           <div className={classes.textDelivery}>
+           <div className={classes.boxText}> Доступно 2568 бонусных баллов </div>
+           </div>
+           <div className={classes.cart}></div>
         <img  src={icon3} alt="" className={classes.box}  />
-        <div className={classes.boxText}> Доступно 2568 бонусных баллов </div>
-     </span>
+        </div>
         </div>
     )
 }
+

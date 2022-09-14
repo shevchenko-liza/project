@@ -1,11 +1,11 @@
-import icon1 from '../Dish/icon/icon1.png'
-import icon2 from '../Dish/icon/icon2.jpg'
-import icon3 from '../Dish/icon/icon3.png'
-import icon4 from '../Dish/icon/icon4.png'
-import icon5 from '../Dish/icon/icon5.png'
-import icon6 from '../Dish/icon/icon6.png'
-import icon7 from '../Dish/icon/icon7.png'
-import icon8 from '../Dish/icon/icon8.png'
+import icon1 from '../../slices/dish/icon/icon1.png'
+import icon2 from '../../slices/dish/icon/icon2.jpg'
+import icon3 from '../../slices/dish/icon/icon3.png'
+import icon4 from '../../slices/dish/icon/icon4.png'
+import icon5 from '../../slices/dish/icon/icon5.png'
+import icon6 from '../../slices/dish/icon/icon6.png'
+import icon7 from '../../slices/dish/icon/icon7.png'
+import icon8 from '../../slices/dish/icon/icon8.png'
 
 export const DISH = [{
         "id": 1,

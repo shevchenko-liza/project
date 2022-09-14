@@ -12,14 +12,15 @@ import icon2 from './photo/phon.png'
 
 import { BURGERS } from '../../store/slices/burgers'
 import { CART } from '../../store/slices/cart'
-
+import {DISH} from '../../store/slices/dish'
+ 
 import classes from './styles.module.scss'
 import clsx from 'clsx'
 
 export const Basket = () => {
   const cart = useSelector(CART)
   const burgers = useSelector(BURGERS)
-
+  const dish=useSelector(DISH)
   let [open, setOpen] = useState(false)
 
   console.log({ cart, burgers });
@@ -43,10 +44,10 @@ export const Basket = () => {
           )
         })}
         <BasketHeader />
-        {/* <FreeDelivery />
+        <FreeDelivery />
           <Delivery />
-          <Box />
-          <BasketFooter /> */}
+           <Box />
+        <BasketFooter /> 
       </div>
     </div>
   )

@@ -5,6 +5,7 @@ import classes from './styles.module.scss'
 export const BasketHeader = () => {
   return (
     <form>
+       <div className={classes.borders}>
       <div className={classes.top}>
         <div>
           <p className={classes.name}>Имя</p>
@@ -33,6 +34,7 @@ export const BasketHeader = () => {
             <option>Курьер</option>
           </select>
         </div>
+      </div>
       </div>
     </form>
   );

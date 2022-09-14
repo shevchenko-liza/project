@@ -2,7 +2,7 @@
     display: grid;
     gap: 15px;
     padding-left: 50px;
-    transform: translateY(-70px);
+    margin-top: 20px;
 }
 
 .price {
@@ -53,8 +53,8 @@
     background: #10B4A4;
     box-shadow: 0px 3px 0px #0A6A60;
     border-color: #10B4A4;
-    transform: translateY(-30px);
     cursor: pointer;
+    margin-top: 44px;
 }
 
 .order {
