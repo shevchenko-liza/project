@@ -7,6 +7,7 @@ import classes from './styles.module.scss'
 import{Text} from './text'
 import {Photo} from './photo' 
 import {Form} from './form'
+import {Basket} from '../Basket'
 export const Restaurant = () => {
    const{restaurant}=useParams()
    console.log(restaurant)
@@ -21,9 +22,9 @@ export const Restaurant = () => {
              <Form/>
      
        <img src={background} alt=""className={clsx(classes.phon,classes.background)}/>
-
-</div>
-
+       <Basket/>
+        </div>
+  
 
         
     )}

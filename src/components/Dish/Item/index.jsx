@@ -36,7 +36,9 @@ export const Order = ({ id }) => {
 export const Item = ({ name, price, photo,id,kind }) => (
     <div> 
         <div className={classes.infoBox}>
+          <div className={classes.icon}>
         <img className={classes.photo} src={photo} alt="" />
+        </div>
         <div className={classes.kind}>{kind}</div>
     <div className={classes.name}>{name}</div>
      <div className={classes.price}>{price}</div>

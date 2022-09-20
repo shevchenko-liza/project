@@ -1,6 +1,8 @@
 import { Text } from './text'
+import {Basket} from '../Basket'
 
 import found from './photo/phone.jpg'
+
 import icon1 from './photo/icon1.jpg'
 
 import classes from './styles.module.scss'
@@ -21,7 +23,7 @@ export const BusinessMenu = () => (
                     <img src={icon1} alt="#" className={classes.picture} />
                     <Text />
                 </div>
-
+<Basket/>
             </div>
         </div>
     </div>

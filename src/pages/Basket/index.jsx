@@ -7,6 +7,9 @@ import { FreeDelivery } from './FreeDelivery'
 import { Box } from './Box'
 import { Delivery } from './Delivery'
 
+import path from './photo/cart.png'
+import phon from './photo/phon.png'
+
 import { CATALOG } from '../../store/slices/catalog'
 import { CART } from '../../store/slices/cart'
 
@@ -23,7 +26,8 @@ export const Basket = () => {
     <div className={clsx(classes.backdrop, { [classes.hide]: !open })}>
       <div className={clsx(classes.cart, { [classes.open]: open })}>
         <button className={classes.toggler} onClick={() => setOpen(open => !open)}>
-          toggle
+          <img src={path} className={classes.icon}/>
+        
         </button>
         <div className={classes.basket}>Корзина</div>
         {Object.keys(cart.list).map(burgerId => {

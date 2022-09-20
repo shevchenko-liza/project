@@ -36,7 +36,7 @@ export const Order = ({ id }) => {
   )
 }
 
-export const Item = ({ name, compound, weight, photo, id }) => (
+export const Item = ({ name, compound, weight, photo, id , price}) => (
   <div className={classes.item}>
     <div className={classes.photoBox}>
       <img className={classes.photo} src={photo} alt="" />
@@ -45,6 +45,7 @@ export const Item = ({ name, compound, weight, photo, id }) => (
       <Link to={generatePath("/burgers/:id", { id })} className={classes.name}>{name} </Link>
       <p className={classes.compound}>Состав: {(Array.isArray(compound) ? compound : []).join(', ')}</p>
       <span className={classes.weight}>{weight}</span>
+      <div className={classes.price}>{price}</div>
 
       <Order id={id} />
     </div>

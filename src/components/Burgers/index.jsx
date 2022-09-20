@@ -23,6 +23,7 @@ export const Burgers = () => {
           compound={item.compound}
           photo={item.photo}
           weight={item.weight}
+          price={item.price}
         />
       ))}
     </div>
