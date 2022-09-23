@@ -1,6 +1,8 @@
 import { useEffect } from "react"
 import { Routes, Route, Navigate } from "react-router-dom"
-import { useDispatch } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
+
+import { Header } from './layout/header'
 
 import { MenuPage } from "./pages/MenuPage"
 import { Menu } from './components/Menu'
@@ -13,22 +15,33 @@ import { Restaurant } from './pages/Restaurant'
 import { BusinessMenu } from "./pages/Business Menu"
 
 import { catalogSlice } from './store/slices/catalog'
-import {Basket} from './pages/Basket'
+import { Basket } from './pages/Basket'
+
+import { CART } from "./store/slices/cart"
+
 import './App.scss'
 
 const App = () => {
   const dispatch = useDispatch()
+  const cart = useSelector(CART)
+
+  useEffect(() => {
+    document.body.style.overflow = cart.opened ? 'hidden' : 'auto'
+    document.body.style.paddingRight = cart.opened ? '15px' : '0px'
+  }, [cart.opened])
 
   useEffect(() => {
     fetch('/api/catalog')
       .then(response => response.json())
       .then(data => {
+        console.log({ data });
         dispatch(catalogSlice.actions.setList(data))
       })
   }, [dispatch])
 
   return (
     <div className="App">
+      <Header />
 
       <Menu />
       <Routes>
@@ -50,7 +63,7 @@ const App = () => {
         <Route index element={<HomePage />} />
 
       </Routes>
-      <Basket/>
+      <Basket />
     </div>
 
   )

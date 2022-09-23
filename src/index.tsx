@@ -34,5 +34,5 @@ try {
     </React.StrictMode>
   )
 } catch (error) {
-  console.error(error.message);
+  console.error((error as Error).message);
 }

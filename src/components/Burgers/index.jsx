@@ -13,6 +13,8 @@ export const Burgers = () => {
   const burgers = useSelector(CATALOG)
     .filter(burger => burger.kind === params.category)
 
+  console.log({ burgers });
+
   return (
     <div className={classes.burgers}>
       {burgers.map((item) => (
