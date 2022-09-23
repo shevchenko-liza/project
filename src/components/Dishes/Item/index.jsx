@@ -1,10 +1,13 @@
 import classes from '../styles.module.scss'
+import { useDispatch } from 'react-redux'
 
+import { cartSlice } from '../../../store/slices/cart'
 
 import { useCallback, useState } from 'react'
 import clsx from 'clsx'
 
-export const Order = ({id}) => {
+export const Order = ({ id }) => {
+  const dispatch = useDispatch()
     const [amount, setAmount] = useState(0);
     const decrease= useCallback(()=>setAmount((amount) => amount-1) ,[]);
     const increase= useCallback(()=>setAmount((amount) => amount+1) ,[])
@@ -16,9 +19,8 @@ export const Order = ({id}) => {
     const handleSubmit = useCallback(event => {
       event.preventDefault()
   
-      console.log({amount,id })
-    }, [amount,id])
-
+      dispatch(cartSlice.actions.set({ id, count: amount }))
+    }, [amount, id, dispatch])
     return (
         <div className={classes.block}>
         

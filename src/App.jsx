@@ -13,7 +13,7 @@ import { Restaurant } from './pages/Restaurant'
 import { BusinessMenu } from "./pages/Business Menu"
 
 import { catalogSlice } from './store/slices/catalog'
-
+import {Basket} from './pages/Basket'
 import './App.scss'
 
 const App = () => {
@@ -50,8 +50,9 @@ const App = () => {
         <Route index element={<HomePage />} />
 
       </Routes>
-
+      <Basket/>
     </div>
+
   )
 }
 
