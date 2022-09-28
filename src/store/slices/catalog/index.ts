@@ -4,7 +4,7 @@ import _keyBy from 'lodash/keyBy'
 
 type ID = number | `${number}`
 
-interface Product {
+export interface Product {
     id: ID,
     name: string
     photo: string

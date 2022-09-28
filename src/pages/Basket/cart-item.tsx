@@ -1,12 +1,12 @@
-import React, { FC, useState, useCallback, ChangeEventHandler, FormEventHandler } from 'react'
+import { FC, useCallback, ChangeEventHandler } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import clsx from 'clsx'
 
-import icon1 from './photo/delete.png'
-import icon2 from './photo/border.png'
-
 import { CATALOG_TABLE } from '../../store/slices/catalog'
 import { CART, cartSlice } from '../../store/slices/cart'
+
+import icon1 from './photo/delete.png'
+import icon2 from './photo/border.png'
 
 import classes from './styles.module.scss'
 
@@ -21,30 +21,14 @@ export const CartItem: FC<CartItemProps> = ({ id }) => {
 
   const cartItem = useSelector(CART).list[id]
   const product = useSelector(CATALOG_TABLE)[id]
-  const decrease = useCallback(() => dispatch(cartSlice.actions.decrease(product.id)), [product.id])
-  const increase = useCallback(() => dispatch(cartSlice.actions.increase(product.id)), [product.id])
 
-
+  const decrease = useCallback(() => dispatch(cartSlice.actions.decrease(id)), [dispatch, id])
   const handleChange = useCallback<ChangeEventHandler<HTMLInputElement>>(event => {
     dispatch(cartSlice.actions.set({ id: product.id, count: number(event.target.value) }))
-  }, [])
+  }, [dispatch, product.id])
+  const increase = useCallback(() => dispatch(cartSlice.actions.increase(id)), [dispatch, id])
 
-
-
-  const [cart, setCart] = useState(product)
-
-  const deleteProduct = (id) => {
-    console.log("Delete", id);
-    setCart((cart) => cart.filter((product) => id !== product.id));
-  }
-  
-
-
-
-
-
-
-
+  const handleDelete = useCallback(() => dispatch(cartSlice.actions.unset(id)), [dispatch, id])
 
   return (
     <div>
@@ -65,7 +49,7 @@ export const CartItem: FC<CartItemProps> = ({ id }) => {
           </div>
         </div>
         <div className={classes.buttonForm}>
-          <button className={classes.butttonDelet} onClick={() => {deleteProduct(id); }}>
+          <button className={classes.butttonDelet} onClick={handleDelete}>
             <img className={classes.delet} src={icon1} alt="" />
           </button>
         </div>

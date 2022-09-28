@@ -1,8 +1,19 @@
-import {Search} from '../search'
-import {Logo} from '../header/logo'
-export const Header = () => (
-  <header >
+import { useSelector } from 'react-redux'
 
-   <Logo/>
-  </header>
-)
+import { CALLBACK_OPENED } from '../../store/slices/callback'
+
+import { Logo } from '../header/logo'
+import { Callback } from './callback'
+
+export const Header = () => {
+  const callbackOpened = useSelector(CALLBACK_OPENED)
+
+  return (
+    <>
+      {callbackOpened ? <Callback /> : null}
+      <header >
+        <Logo />
+      </header>
+    </>
+  )
+}

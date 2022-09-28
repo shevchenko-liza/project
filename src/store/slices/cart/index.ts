@@ -36,6 +36,9 @@ export const cartSlice = createSlice({
                 count: action.payload.count || 1,
             }
         },
+        unset(state, action: PayloadAction<ID>) {
+            delete state.list[action.payload]
+        },
         increase(state, action: PayloadAction<ID>) {
             state.list[action.payload].count += 1
         },
