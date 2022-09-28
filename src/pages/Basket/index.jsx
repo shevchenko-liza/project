@@ -21,7 +21,7 @@ export const Basket = () => {
   const cart = useSelector(CART)
 
   const handleToggle = useCallback(() => dispatch(cartSlice.actions.toggle()), [dispatch])
-
+ 
   return (
     <div className={clsx(classes.backdrop, { [classes.hide]: !cart.opened })}>
       <div className={clsx(classes.cart, { [classes.open]: cart.opened })}>

@@ -1,0 +1,148 @@
+.header {
+    margin: auto;
+    max-width: 1200px;
+    margin-top: 34px;
+    height: 400px;
+}
+
+.search {
+    height: 80px;
+    max-width: 1215px;
+    border-radius: 10px;
+    color: #DADADA;
+}
+
+.iconBox {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone {
+    height: 16px;
+    width: 16px;
+    margin-left: 27px;
+    border-radius: 0px;
+    align-items: center;
+}
+
+.phoneNumber {
+    height: 18px;
+    width: 113px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0px;
+    margin-left: 13px;
+}
+
+.backCall {
+    height: 18px;
+    width: 193px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0px;
+    margin-left: 36px;
+    cursor: pointer;
+}
+
+.logo {
+    height: 102px;
+    width: 175px;
+    border-radius: 0px;
+    margin-left: 116px;
+}
+
+.clock {
+    height: 20px;
+    width: 21px;
+    border-radius: 0px;
+    margin-left: 101px;
+}
+
+.time {
+    height: 18px;
+    width: 192px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0px;
+    margin-left: 20px;
+}
+
+.facebook {
+    height: 20px;
+    width: 20px;
+    border-radius: 0px;
+    margin-left: 45px;
+}
+
+.instagram {
+    height: 20px;
+    width: 20px;
+    left: 1105px;
+    top: 51px;
+    border-radius: 0px;
+    margin-left: 32px;
+}
+
+.button_search {
+    height: 20px;
+    width: 20px;
+    border-radius: 0px;
+    margin-left: 34px;
+    cursor: pointer;
+}
+
+.block {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.button {
+    height: 45px;
+    width: 275px;
+    border-radius: 0px;
+    background-color: #10B4A4;
+    border: #10B4A4;
+    color: white;
+    cursor: pointer;
+}
+
+.button_delet {
+    height: 20px;
+    width: 20px;
+    border-radius: 0px;
+    margin-left: 1170px;
+    transform: translateY(-30px);
+    cursor: pointer;
+}
+
+.searchBlock {
+    margin-bottom: 200px;
+}
+
+.form {
+    margin-bottom: 200px;
+    margin-left: -200px;
+}
+
+.userName,
+.userPhone {
+    height: 48px;
+    width: 408px;
+    border-radius: 5px;
+    margin: 0 25px 0 0;
+    border-color: #D8D8D8;
+}
+
+.userName {
+    margin-left: -30px;
+}
+
+.formBlock {}

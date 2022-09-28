@@ -5,7 +5,7 @@ import { Basket } from '../../pages/Basket'
 import { Dish } from '../../components/Dish'
 import { Order } from '../../pages/Burger/Order'
 import { Text } from '../../components/Text'
-
+import {Search} from '../../layout/search'
 import classes from '../../pages/Burger/styles.module.scss'
 
 import { CATALOG } from '../../store/slices/catalog'
@@ -22,6 +22,8 @@ export const BurgerPage = () => {
 
   return (
     <div>
+      
+
       <div className={classes.burger}>
         <div className={classes.photoBox}>
           <img className={classes.photo} src={burger.burger_photo} alt="" />
@@ -47,13 +49,16 @@ export const BurgerPage = () => {
             </div>
           )
           : null}
+    
         <span className={classes.title}>Рекомендуемые блюда</span>
+      
       </div>
 
       <Basket />
       <Dish />
 
       <Text />
+      <Search/>
     </div>
   )
 

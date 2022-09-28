@@ -41,10 +41,12 @@ const App = () => {
 
   return (
     <div className="App">
+      
       <Header />
 
       <Menu />
       <Routes>
+
         <Route path="menu">
           <Route path="business-menu" element={<BusinessMenu />} />
           <Route path=":category" element={<CatalogPage />} />
@@ -61,8 +63,9 @@ const App = () => {
         <Route path="menu-page" element={<MenuPage />} />
 
         <Route index element={<HomePage />} />
-
+        
       </Routes>
+      
       <Basket />
     </div>
 

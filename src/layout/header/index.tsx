@@ -1,7 +1,8 @@
-import classes from './styles.module.scss'
-
+import {Search} from '../search'
+import {Logo} from '../header/logo'
 export const Header = () => (
-  <header className={classes.header}>
-    Бургеры
+  <header >
+
+   <Logo/>
   </header>
 )

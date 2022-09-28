@@ -15,12 +15,12 @@ export const Dish = () => {
     <div className={classes.dish}>
       {catalog.map((item) => (
         <Item
-          key={item.id}
-          id={item.id}
-          name={item.name}
-          price={item.price}
-          photo={item.photo}
-          kind={item.kind}
+key={item.id}
+id={item.id}
+ name={item.name}
+ price={item.price}
+ photo={item.photo}
+kind={item.kind}
         />
       ))}
     </div>

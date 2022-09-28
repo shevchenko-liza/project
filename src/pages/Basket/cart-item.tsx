@@ -24,9 +24,27 @@ export const CartItem: FC<CartItemProps> = ({ id }) => {
   const decrease = useCallback(() => dispatch(cartSlice.actions.decrease(product.id)), [product.id])
   const increase = useCallback(() => dispatch(cartSlice.actions.increase(product.id)), [product.id])
 
+
   const handleChange = useCallback<ChangeEventHandler<HTMLInputElement>>(event => {
     dispatch(cartSlice.actions.set({ id: product.id, count: number(event.target.value) }))
   }, [])
+
+
+
+  const [cart, setCart] = useState(product)
+
+  const deleteProduct = (id) => {
+    console.log("Delete", id);
+    setCart((cart) => cart.filter((product) => id !== product.id));
+  }
+  
+
+
+
+
+
+
+
 
   return (
     <div>
@@ -36,6 +54,7 @@ export const CartItem: FC<CartItemProps> = ({ id }) => {
         </div>
         <div className={classes.infoBox}>
           <div className={classes.title}>{product.name} </div>
+
           <div className={classes.price}> {product.price}</div>
         </div>
         <div className={classes.form}>
@@ -46,7 +65,7 @@ export const CartItem: FC<CartItemProps> = ({ id }) => {
           </div>
         </div>
         <div className={classes.buttonForm}>
-          <button className={classes.butttonDelet}>
+          <button className={classes.butttonDelet} onClick={() => {deleteProduct(id); }}>
             <img className={classes.delet} src={icon1} alt="" />
           </button>
         </div>

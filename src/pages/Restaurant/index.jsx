@@ -4,27 +4,29 @@ import background from './photo/background.jpg'
 import clsx from "clsx"
 
 import classes from './styles.module.scss'
-import{Text} from './text'
-import {Photo} from './photo' 
-import {Form} from './form'
-import {Basket} from '../Basket'
+import { Text } from './text'
+import { Photo } from './photo'
+import { Form } from './form'
+
 export const Restaurant = () => {
-   const{restaurant}=useParams()
-   console.log(restaurant)
+    const { restaurant } = useParams()
+    console.log(restaurant)
     return (
- 
+
         <div >
             <div className={classes.block}>
-            <div className={classes.title}>Ресторан</div>
+                <div className={classes.title}>Ресторан</div>
             </div>
-             <Photo/>
-             <Text/>
-             <Form/>
-     
-       <img src={background} alt=""className={clsx(classes.phon,classes.background)}/>
-       <Basket/>
-        </div>
-  
+           
+            <Photo />
+            <Text />
+            <Form />
 
-        
-    )}
+            <img src={background} alt="" className={clsx(classes.phon, classes.background)} />
+          
+        </div>
+
+
+
+    )
+}
