@@ -64,3 +64,40 @@
     text-align: left;
     color: #474747;
 }
+
+.time {
+    margin-left: 49px;
+}
+
+.price {
+    height: 21px;
+    width: 64px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0px;
+    margin-top: 4px;
+}
+
+.oneWeek {
+    height: 19px;
+    width: 98px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0px;
+}
+
+.button {
+    height: 40px;
+    width: 130px;
+    background-color: #10B4A4;
+    border-radius: 0px;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

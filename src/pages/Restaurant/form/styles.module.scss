@@ -1,0 +1,173 @@
+.formBox {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.form {
+    height: 400px;
+    width: 555px;
+    position: absolute;
+    margin-left: 325px;
+    transform: translateY(150px);
+}
+
+.formTitle {
+    position: absolute;
+    height: 42px;
+    width: 283px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 500;
+    color: #474747;
+    transform: translateY(240px);
+    margin-left: 445px;
+    color: #474747;
+}
+
+.formBlock {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.bookTable {
+    position: absolute;
+    margin: auto;
+    max-width: 550px;
+}
+
+.dateForm {
+    margin-top: 320px;
+    margin-left: 381px;
+}
+
+.date {
+    height: 16px;
+    width: 33px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #474747;
+}
+
+.options {
+    height: 35px;
+    width: 180px;
+    border-radius: 5px;
+    border-color: #D8D8D8;
+    transform: translateY(-10px);
+}
+
+.times {
+    margin-left: 580px;
+    transform: translateY(-76px);
+    height: 16px;
+    width: 43px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #474747;
+}
+
+.time {
+    height: 35px;
+    width: 115px;
+    border-radius: 5px;
+    border-color: #D8D8D8;
+    margin-left: 580px;
+    transform: translateY(-88px);
+}
+
+.place {
+    height: 16px;
+    width: 115px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    margin-left: 715px;
+    transform: translateY(-154px);
+    color: #474747;
+}
+
+.places {
+    height: 35px;
+    width: 115px;
+    border-radius: 5px;
+    border-color: #D8D8D8;
+    margin-left: 715px;
+    transform: translateY(-166px);
+}
+
+.name {
+    height: 16px;
+    width: 29px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #474747;
+    transform: translateY(5px);
+}
+
+.nameForm {
+    margin-left: 381px;
+    transform: translateY(-150px);
+}
+
+.userName {
+    height: 35px;
+    width: 217px;
+    border-radius: 5px;
+    border-color: #D8D8D8;
+    margin-top: -25px;
+}
+
+.phoneForm {
+    margin-left: 610px;
+    transform: translateY(-228px);
+}
+
+.phone {
+    height: 16px;
+    width: 58px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    transform: translateY(10px);
+}
+
+.userPhone {
+    height: 35px;
+    width: 220px;
+    border-radius: 5px;
+    border-color: #D8D8D8;
+}
+
+.button {
+    height: 40px;
+    width: 180px;
+    background-color: #10B4A4;
+    color: #10B4A4;
+    border-color: #10B4A4;
+    font-size: 16px;
+    transform: translateY(-210px);
+    margin-left: 500px;
+    cursor: pointer;
+}
+
+.order {
+    color: white;
+}
+
+.background {
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+}

@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react'
 import clsx from 'clsx'
 import { useDispatch } from 'react-redux'
 import { Link, generatePath } from 'react-router-dom'
-
+import burgerBackground from '../photo/burgerBackground.jpg'
 import { cartSlice } from '../../../store/slices/cart'
 
 import classes from '../styles.module.scss'

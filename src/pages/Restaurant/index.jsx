@@ -6,27 +6,16 @@ import clsx from "clsx"
 import classes from './styles.module.scss'
 import { Text } from './text'
 import { Photo } from './photo'
-import { Form } from './form'
+import { Form } from './form/form.jsx'
 
 export const Restaurant = () => {
     const { restaurant } = useParams()
     console.log(restaurant)
     return (
-
-        <div >
-            <div className={classes.block}>
-                <div className={classes.title}>Ресторан</div>
-            </div>
-           
+        <div>
             <Photo />
             <Text />
             <Form />
-
-            <img src={background} alt="" className={clsx(classes.phon, classes.background)} />
-          
         </div>
-
-
-
     )
 }

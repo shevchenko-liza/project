@@ -1,6 +1,8 @@
 import classes from './styles.module.scss'
+import clsx from 'clsx'
 export const Text=()=>{
     return(
+        <div className={clsx('container')}>
         <div className={classes.textBlock}>
         <div className={classes.text}>Доставка еды в Запорожье «Rock n Roll» это: вкусно, быстро и недорого. Именно на этих трех принципах работает Доставка еды на дом «Rock n Roll».
         <br/>
@@ -15,6 +17,7 @@ export const Text=()=>{
         <br/>
         <br/>
         Мы гарантируем, что все блюда, заказанные Вами, готовятся непосредственно перед отправкой. А чтобы вкус и аромат блюд сохранился с доставкой, мы используем специальную пищевую упаковку.</div>
+        </div>
         </div>
     )
 }
