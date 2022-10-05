@@ -1,24 +1,19 @@
 import { useSelector } from 'react-redux'
 
-import { CALLBACK_OPENED } from '../../store/slices/callback'
-
-import { SEARCH_OPENED } from '../../store/slices/search'
+import { HEADER_STYLE } from '../../store/slices/header-styles'
 
 import { Logo } from '../header/logo'
-import { Search } from '../search'
-import { Callback } from './callback'
+import { TopForm } from '../top-form'
+
 import classes from './styles.module.scss'
+
 export const Header = () => {
-  const callbackOpened = useSelector(CALLBACK_OPENED)
-  const searchOpened = useSelector(SEARCH_OPENED)
+  const headerStyle = useSelector(HEADER_STYLE)
 
   return (
     <>
-    
-    
-      <header className={classes.header}>
-      {callbackOpened ? <Callback />:null}
-      {searchOpened ? <Search />:null}
+      <TopForm />
+      <header className={classes.header} style={headerStyle}>
         <Logo />
       </header>
     </>

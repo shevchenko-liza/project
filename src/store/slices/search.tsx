@@ -1,10 +1,7 @@
-
 import { createSlice } from "@reduxjs/toolkit";
 
 interface CatalogState {
     opened: boolean
-
-
 }
 
 export const searchSlice = createSlice({
@@ -15,7 +12,7 @@ export const searchSlice = createSlice({
     reducers: {
         open(state) {
             state.opened = true
-            
+
         },
         close(state) {
             state.opened = false

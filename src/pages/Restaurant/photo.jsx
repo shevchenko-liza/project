@@ -10,29 +10,25 @@ import icon7 from './photo/icon7.jpg'
 import icon8 from './photo/icon8.jpg'
 import icon9 from './photo/icon9.jpg'
 import icon10 from './photo/icon10.jpg'
-import main from './photo/main.jpg'
 
 export const Photo = () => {
     return (
         <div>
-            <div className={classes.boxMain}>
-                <img src={main} className={classes.main} />
-            </div>
             <div className={clsx('container', classes.header)}>
-            <div className={classes.box}>
-                <img src={icon2} alt="" className={classes.photo} />
+                <div className={classes.box}>
+                    <img src={icon2} alt="" className={classes.photo} />
+                </div>
+                <div className={classes.iconBox}>
+                    <img src={icon3} alt="" className={classes.photos} />
+                    <img src={icon4} alt="" className={classes.photos} />
+                    <img src={icon5} alt="" className={classes.photos} />
+                    <img src={icon6} alt="" className={classes.photos} />
+                    <img src={icon7} alt="" className={classes.photos} />
+                    <img src={icon8} alt="" className={classes.photos} />
+                    <img src={icon9} alt="" className={classes.photos} />
+                    <img src={icon10} alt="" className={classes.photos} />
+                </div>
             </div>
-            <div className={classes.iconBox}>
-                <img src={icon3} alt="" className={classes.photos} />
-                <img src={icon4} alt="" className={classes.photos} />
-                <img src={icon5} alt="" className={classes.photos} />
-                <img src={icon6} alt="" className={classes.photos} />
-                <img src={icon7} alt="" className={classes.photos} />
-                <img src={icon8} alt="" className={classes.photos} />
-                <img src={icon9} alt="" className={classes.photos} />
-                <img src={icon10} alt="" className={classes.photos} />
-            </div>
-        </div>
         </div>
     )
 }

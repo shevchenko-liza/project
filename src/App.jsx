@@ -41,7 +41,7 @@ const App = () => {
 
   return (
     <div className="App">
-      
+
       <Header />
 
       <Menu />
@@ -63,9 +63,9 @@ const App = () => {
         <Route path="menu-page" element={<MenuPage />} />
 
         <Route index element={<HomePage />} />
-        
+
       </Routes>
-      
+
       <Basket />
     </div>
 
