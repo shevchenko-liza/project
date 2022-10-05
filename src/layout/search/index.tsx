@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { response } from 'express'
 import iconSearch from './photo/button_search.jpg'
-import { Item } from "../../components/Burgers/Item"
+
 import { useCallback } from 'react'
 import { useDispatch } from 'react-redux'
 import { searchSlice } from '../../store/slices/search'
@@ -42,21 +42,23 @@ export const Search = () => {
         className={clsx( classes.search, classes.box)}
         onChange={(event) => setValue(event.target.value)}
       />
-       <button className={classes.icon} onClick={handleClose}>
+       <button type="reset" className={classes.icon} onClick={handleClose}>
         <img src={iconSearch} className={classes.iconSearch}/>
        </button>
       <div className={classes.product}>
         {
           productFiltration.map((product) => {
             return (
-              <Item
-                compound={product.compound}
+            <>
+              compound={product.compound}
                 weight={product.weight}
                 photo={product.photo}
                 id={product.id}
                 price={product.price}
                 name={product.name}
-              />
+            </>
+              
+            
             )
           })
         }
