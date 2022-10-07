@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
-import { Basket } from '../../pages/Basket'
+
 import { Dish } from '../../components/Dish'
 import { Order } from '../../pages/Burger/Order'
 import { Text } from '../../components/Text'
@@ -54,7 +54,6 @@ export const BurgerPage = () => {
       
       </div>
 
-      <Basket />
       <Dish />
 
       <Text />

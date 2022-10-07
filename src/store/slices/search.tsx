@@ -17,6 +17,9 @@ export const searchSlice = createSlice({
         close(state) {
             state.opened = false
         },
+        toggle(state) {
+            state.opened = !state.opened
+          },
     }
 })
 

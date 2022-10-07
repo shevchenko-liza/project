@@ -45,7 +45,7 @@
         "photo": "/images/burgers/burger3.png",
         "weight": "200 грамм",
         "kind": "burgers",
-        "recommended": false
+        "recommended": true
     },
     {
         "id": 4,

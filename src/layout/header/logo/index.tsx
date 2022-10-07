@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { useCallback } from 'react'
 
 import search from '../photo/search.png'
 import phone from '../photo/phone.jpg'
@@ -8,16 +9,11 @@ import logo from '../photo/logo.png'
 import clock from '../photo/Clock.png'
 import facebook from '../photo/facebook.png'
 import instagram from '../photo/instagram.png'
-import delet from '../photo/deletSearch.png'
-import React, { useCallback } from 'react'
-import back from '../photo/back.png'
-import { Search } from '../../search'
-import { SearchToggler } from '../../search/toggler'
+import border from '../photo.oval.jpg'
 
-import background from '../photo/background.jpg'
-import button_search from '../photo/button_search.jpg'
+import { SearchToggler } from '../../search/toggler'
 import { callbackSlice } from '../../../store/slices/callback'
-import { searchSlice } from '../../../store/slices/search'
+import { CallBackToggler } from '../callback/toggler'
 
 import classes from './styles.module.scss'
 
@@ -36,8 +32,7 @@ export const Logo = () => {
           <a href="tel:">
             <div className={classes.userPhone}>(066) 451-36-74</div>
           </a>
-
-          <button type="submit" onClick={handleToggleCallback} className={classes.Callback}>Заказать обратный звонок</button >
+          <CallBackToggler />
         </div>
         <Link to="/" className={classes.box}>
           <img src={logo} alt="" className={classes.logo} />

@@ -1,5 +1,5 @@
 import classes from './styles.module.scss'
-import { CATALOG_TABLE, Product } from '../../store/slices/catalog'
+import { CATALOG, Product } from '../../store/slices/catalog'
 import background from './photo/background.jpg'
 import button_search from './photo/button_search.jpg'
 import clsx from 'clsx'
@@ -18,7 +18,7 @@ export const Search = () => {
 
   const handleClose = useCallback(() => dispatch(searchSlice.actions.close()), [dispatch])
   const [search, setSearch] = useState<Product[]>([])
-  const product = useSelector(CATALOG_TABLE)
+  const product = useSelector(CATALOG)
   const getProduct = () => {
     // product.then((response) => {
     //     setSearch(response.data)
@@ -50,11 +50,7 @@ export const Search = () => {
           productFiltration.map((product) => {
             return (
             <>
-              compound={product.compound}
-                weight={product.weight}
                 photo={product.photo}
-                id={product.id}
-                price={product.price}
                 name={product.name}
             </>
               

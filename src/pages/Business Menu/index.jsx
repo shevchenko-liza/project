@@ -1,22 +1,21 @@
 import classes from './styles.module.scss'
 import { useParams } from "react-router-dom"
-import found from './photo/phone.jpg'
+import main from './photo/phone.jpg'
 import icon1 from './photo/icon1.jpg'
 import { Text } from './text'
 import {Time} from './time'
 import clsx from 'clsx'
+import { HeaderStyle } from '../../store/slices/header-styles/component'
 export const BusinessMenu = () => {
     const { business_menu } = useParams()
     console.log({ business_menu });
 
     return (
         <div >
+                        <HeaderStyle height="410px" width="100%" background={`url(${main})`} />
             <div className={classes.boxTitle}>
                 <div className={classes.title}>Бизнес меню</div>
             </div>
-            <span className={classes.iconBox}>
-                <img src={found} alt="#" className={classes.found} />
-            </span>
             <div className={classes.block}>
                 <div className={classes.part}>
                     <div className={classes.business_menu}>
