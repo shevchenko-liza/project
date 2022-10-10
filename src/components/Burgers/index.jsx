@@ -19,7 +19,7 @@ export const Burgers = () => {
 
   return (
     <div className={classes.burgers}>
-            <HeaderStyle height="410px"  background-size={"100%"} background={`url(${burger})`} />
+            <HeaderStyle height="410px"  background={`url(${burger}) no-repeat center/100% `} />
       {burgers.map((item) => (
         <Item
           key={item.id}

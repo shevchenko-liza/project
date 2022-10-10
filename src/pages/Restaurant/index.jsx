@@ -17,7 +17,7 @@ export const Restaurant = () => {
 
     return (
         <div>
-            <HeaderStyle className={classes.main} height="300px" width="100%" background={`url(${main})`}  />
+            <HeaderStyle className={classes.main} height="300px" background={`url(${main}) no-repeat center/100% `}  />
             <Photo />
             <Text />
             <Form />

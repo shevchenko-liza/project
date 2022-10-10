@@ -37,14 +37,25 @@
 .box {
     display: flex;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 5px;
+}
+
+.border_logo {
+    position: relative;
+    height: 126px;
+    width: 126px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 125px;
 }
 
 .logo {
+    position: absolute;
     height: 102px;
     width: 175px;
     border-radius: 0px;
-    margin-left: 115px;
+    margin-left: -87px;
+    margin-top: 11px;
 }
 
 .clock {
@@ -53,19 +64,17 @@
     height: 20px;
     width: 21px;
     border-radius: 0px;
-    margin-left: 100px;
+    margin-left: 110px;
 }
 
 .timeBlock {
     display: flex;
     align-items: center;
-    margin-top: 15px;
 }
 
 .phoneBox {
     display: flex;
     align-items: center;
-    margin-top: 15px;
 }
 
 .phone {
@@ -104,11 +113,10 @@
 .socialNetworksBlock {
     display: flex;
     align-items: center;
-    margin-top: 15px;
 }
 
 .facebook {
-    margin-left: 45px;
+    margin-left: 55px;
     height: 20px;
     width: 21px;
 }

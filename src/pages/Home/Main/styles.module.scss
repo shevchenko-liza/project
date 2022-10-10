@@ -1,39 +1,35 @@
-.mainPhoto {
-    height: 350px;
-    width: 1200px;
+.header {
     margin-top: 50px;
 }
 
-.main {
-    margin: auto;
-    max-width: 1200px;
+.mainPhoto {
+    height: 350px;
+    width: 1200px;
+    border-radius: 10px;
 }
 
 .mainText {
+    position: absolute;
+    padding-top: 66px;
     height: 126px;
-    width: 423px;
+    max-width: 430px;
     font-family: Roboto;
     font-size: 36px;
-    font-weight: 500;
-    font-size: 36px;
+    font-weight: 700;
     line-height: 42px;
     letter-spacing: 0px;
-    margin-left: 77px;
-    transform: translateY(-280px);
     color: white;
+    margin-left: 77px;
 }
 
-.button {
+.DiscountButton {
+    position: absolute;
+    margin-top: 230px;
     height: 43px;
     width: 223px;
-    border-radius: 0px;
-    background-color: #FFFFFF;
-    border-color: #FFFFFF;
-}
-
-.mainButton {
-    transform: translateY( -246px);
-    padding-left: 77px;
+    background-color: white;
+    border-color: white;
+    margin-left: 77px;
 }
 
 .order {
@@ -41,9 +37,12 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
+    text-align: center;
 }
 
 .mainDishes {
+    margin-top: 90px;
+    margin-left: 393px;
     height: 42px;
     width: 404px;
     font-family: Roboto;
@@ -51,12 +50,6 @@
     font-weight: 500;
     line-height: 42px;
     letter-spacing: 0px;
-    margin-left: 385px;
     color: #474747;
-    transform: translateY(-95px);
-}
-
-.icon {
-    margin: auto;
-    width: 100%;
+    margin-bottom: 20px;
 }

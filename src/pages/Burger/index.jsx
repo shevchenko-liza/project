@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux'
 
 import { Dish } from '../../components/Dish'
 import { Order } from '../../pages/Burger/Order'
-import { Text } from '../../components/Text'
 import {Search} from '../../layout/search'
 import classes from '../../pages/Burger/styles.module.scss'
 
@@ -55,8 +54,6 @@ export const BurgerPage = () => {
       </div>
 
       <Dish />
-
-      <Text />
       <Search/>
     </div>
   )

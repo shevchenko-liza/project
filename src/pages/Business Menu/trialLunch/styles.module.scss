@@ -1,0 +1,53 @@
+    .photo {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+    }
+    
+    .background {
+        margin-top: 80px;
+    }
+    
+    .border {
+        margin: auto;
+        position: relative;
+        height: 312px;
+        width: 550px;
+        background-color: white;
+        transform: translateY(40px);
+    }
+    
+    .order_lunch {
+        height: 35px;
+        width: 340px;
+        font-family: Roboto;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 35px;
+        letter-spacing: 0px;
+        margin-left: 110px;
+        padding-top: 56px;
+    }
+    
+    .advertising {
+        height: 40px;
+        width: 450px;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0px;
+        margin-left: 60px;
+        padding-top: 65px;
+    }
+    
+    .button {
+        height: 40px;
+        width: 140px;
+        border-radius: 0px;
+        border-color: #10B4A4;
+        background-color: #10B4A4;
+        color: white;
+        margin-top: 100px;
+        margin-left: 205px;
+    }

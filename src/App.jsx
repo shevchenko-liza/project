@@ -16,6 +16,7 @@ import { BusinessMenu } from "./pages/Business Menu"
 
 import { catalogSlice } from './store/slices/catalog'
 import { Basket } from './pages/Basket'
+import {Text} from './components/Text'
 
 import { CART } from "./store/slices/cart"
 
@@ -41,12 +42,9 @@ const App = () => {
 
   return (
     <div className="App">
-
       <Header />
-
       <Menu />
       <Routes>
-
         <Route path="menu">
           <Route path="business-menu" element={<BusinessMenu />} />
           <Route path=":category" element={<CatalogPage />} />
@@ -71,5 +69,4 @@ const App = () => {
 
   )
 }
-
 export default App

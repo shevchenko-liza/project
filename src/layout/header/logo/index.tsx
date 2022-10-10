@@ -35,7 +35,9 @@ export const Logo = () => {
           <CallBackToggler />
         </div>
         <Link to="/" className={classes.box}>
+            <div className={classes.border_logo}>
           <img src={logo} alt="" className={classes.logo} />
+          </div>
         </Link>
         <div className={classes.timeBlock}>
           <img src={clock} alt="" className={classes.clock} />

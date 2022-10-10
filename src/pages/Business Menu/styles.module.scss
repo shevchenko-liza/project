@@ -1,59 +1,16 @@
-.found {
-    width: 100%;
-    height: 414px;
-    margin-top: 58px;
-}
-
-.title {
-    position: absolute;
-    height: 42px;
-    font-family: Roboto;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 42px;
-    letter-spacing: 0px;
-    margin-top: 280px;
-    color: white;
-    margin-left: 380px;
-}
-
-.boxTitle {
-    margin: auto;
-    max-width: 1000px;
-}
-
 .block {
-    margin: auto;
-    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 130px;
 }
 
 .picture {
     height: 270px;
-    width: 355px;
+    width: 366px;
+    border-radius: 0px;
 }
 
-.business_menu {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.part {
-    margin-top: 180px;
-}
-
-.text {
-    height: 224px;
-    width: 405px;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0px;
-    margin-top: 26px;
-    color: #474747;
-}
-
-.name {
+.menu_title {
     height: 28px;
     width: 151px;
     font-family: Roboto;
@@ -61,43 +18,15 @@
     font-weight: 500;
     line-height: 28px;
     letter-spacing: 0px;
-    text-align: left;
-    color: #474747;
+    margin-bottom: 26px;
 }
 
-.time {
-    margin-left: 49px;
-}
-
-.price {
-    height: 21px;
-    width: 64px;
+.menu_text {
+    height: 224px;
+    width: 405px;
     font-family: Roboto;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 0px;
-    margin-top: 4px;
-}
-
-.oneWeek {
-    height: 19px;
-    width: 98px;
-    font-family: Roboto;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 19px;
+    line-height: 16px;
     letter-spacing: 0px;
-}
-
-.button {
-    height: 40px;
-    width: 130px;
-    background-color: #10B4A4;
-    border-radius: 0px;
-}
-
-.top {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
 }
