@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react'
 import clsx from 'clsx'
 import { useDispatch } from 'react-redux'
 import { Link, generatePath } from 'react-router-dom'
-import burgerBackground from '../photo/burgerBackground.jpg'
+
 import { cartSlice } from '../../../store/slices/cart'
 
 import classes from '../styles.module.scss'
@@ -36,7 +36,7 @@ export const Order = ({ id }) => {
   )
 }
 
-export const Item = ({ name, compound, weight, photo, id , price}) => (
+export const Item = ({ name, compound, weight, photo, id, price }) => (
   <div className={classes.item}>
     <div className={classes.photoBox}>
       <img className={classes.photo} src={photo} alt="" />

@@ -10,15 +10,14 @@ import { Form } from './form/form.jsx'
 // import background from './photo/background.jpg'
 
 import main from './photo/main.jpg'
-
-// import classes from './styles.module.scss'
+import classes from './styles.module.scss'
 
 export const Restaurant = () => {
     // const { restaurant } = useParams()
 
     return (
         <div>
-            <HeaderStyle height="300px" width="100%" background={`url(${main})`} />
+            <HeaderStyle className={classes.main} height="300px" width="100%" background={`url(${main})`}  />
             <Photo />
             <Text />
             <Form />

@@ -19,7 +19,7 @@ import classes from './styles.module.scss'
 
 export const Logo = () => {
   const dispatch = useDispatch()
-  const handleToggleCallback = useCallback(() => dispatch(callbackSlice.actions.toggle()), [dispatch])
+
 
   return (
     <div className={clsx('container', classes.header)}>

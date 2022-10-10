@@ -1,5 +1,5 @@
-import{DISHES} from './mainDish'
-import {Item} from './Item'
+import { DISHES } from './mainDish'
+import { Item } from './Item'
 import classes from './styles.module.scss'
 
 import { useSelector } from 'react-redux'
@@ -9,21 +9,22 @@ import { CATALOG } from '../../store/slices/catalog'
 export const Dishes = () => {
   const catalog = useSelector(CATALOG)
     .filter(product => product.recommended)
-    return(
+  return (
     <div className={classes.dishes}>
       {catalog.map((item, index) => (
         <Item
           key={item.id}
           name={item.name}
-         kind={item.kind}
+          kind={item.kind}
           photo={item.photo}
-         price={item.price}
-         id={item.id}
-          />
-        
+          price={item.price}
+          id={item.id}
+        />
+
 
       ))}
-      
+
     </div>
-    
-  )}
+
+  )
+}

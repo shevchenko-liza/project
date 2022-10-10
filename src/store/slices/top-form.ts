@@ -23,7 +23,8 @@ export const topFormSlice = createSlice({
       state.variant = false
     },
     toggle(state, action: PayloadAction<TopForm | false | undefined>) {
-      state.variant = action.payload ?? false
+      state.variant = action.payload && action.payload !== state.variant ? action.payload : false
+   
     },
   }
 })

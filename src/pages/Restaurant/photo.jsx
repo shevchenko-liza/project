@@ -1,4 +1,4 @@
-import clsx from 'clsx'
+
 import classes from './styles.module.scss'
 
 import icon2 from './photo/icon2.jpg'
@@ -14,20 +14,20 @@ import icon10 from './photo/icon10.jpg'
 export const Photo = () => {
     return (
         <div>
-            <div className={clsx('container', classes.header)}>
-                <div className={classes.box}>
-                    <img src={icon2} alt="" className={classes.photo} />
-                </div>
-                <div className={classes.iconBox}>
-                    <img src={icon3} alt="" className={classes.photos} />
-                    <img src={icon4} alt="" className={classes.photos} />
-                    <img src={icon5} alt="" className={classes.photos} />
-                    <img src={icon6} alt="" className={classes.photos} />
-                    <img src={icon7} alt="" className={classes.photos} />
-                    <img src={icon8} alt="" className={classes.photos} />
-                    <img src={icon9} alt="" className={classes.photos} />
-                    <img src={icon10} alt="" className={classes.photos} />
-                </div>
+           
+
+            <div className={classes.box}>
+                <img src={icon2} alt="" className={classes.photo} />
+            </div>
+            <div className={classes.iconBox}>
+                <img src={icon3} alt="" className={classes.photos} />
+                <img src={icon4} alt="" className={classes.photos} />
+                <img src={icon5} alt="" className={classes.photos} />
+                <img src={icon6} alt="" className={classes.photos} />
+                <img src={icon7} alt="" className={classes.photos} />
+                <img src={icon8} alt="" className={classes.photos} />
+                <img src={icon9} alt="" className={classes.photos} />
+                <img src={icon10} alt="" className={classes.photos} />
             </div>
         </div>
     )

@@ -1,29 +1,21 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-interface CatalogState {
-  opened: boolean
+interface CallbackState {
+ 
 }
 
 export const callbackSlice = createSlice({
   name: 'callback',
   initialState: {
     opened: false,
-  },
+  } as CallbackState,
   reducers: {
-    open(state) {
-      state.opened = true
-    },
-    close(state) {
-      state.opened = false
-    },
-    toggle(state) {
-      state.opened = !state.opened
-    },
+    
   }
 })
 
 interface State {
-  [callbackSlice.name]: CatalogState
+  [callbackSlice.name]: CallbackState
 }
 
-export const CALLBACK_OPENED = (state: State) => state[callbackSlice.name].opened
+
