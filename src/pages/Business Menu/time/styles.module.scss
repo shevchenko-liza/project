@@ -1,3 +1,58 @@
-.oneWeek {}
+.Week {
+    height: 19px;
+    width: 98px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0px;
+    margin-top: 23px;
+    margin-left: 25px;
+}
 
-.button {}
+.price {
+    height: 21px;
+    width: 74px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0px;
+    margin-top: 4px;
+    margin-left: 25px;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.block {
+    border: 2px dashed #D8D8D8;
+    display: inline-block;
+    height: 90px;
+    width: 330px;
+    margin-left: 49px;
+}
+
+.button {
+    height: 40px;
+    width: 130px;
+    border-radius: 0px;
+    background-color: #10B4A4;
+    border-color: #10B4A4;
+    color: white;
+    margin-left: -155px;
+    margin-top: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.blocks {
+    border-left: 2px dashed #D8D8D8;
+    border-bottom: 2px dashed #D8D8D8;
+    border-right: 2px dashed #D8D8D8;
+    height: 90px;
+    width: 330px;
+    margin-left: 49px;
+}

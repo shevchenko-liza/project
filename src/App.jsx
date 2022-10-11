@@ -21,6 +21,7 @@ import {Text} from './components/Text'
 import { CART } from "./store/slices/cart"
 
 import './App.scss'
+import { MenuSubscription } from "./pages/MenuSubscription"
 
 const App = () => {
   const dispatch = useDispatch()
@@ -59,6 +60,11 @@ const App = () => {
         <Route path="restaurant" element={<Restaurant />} />
 
         <Route path="menu-page" element={<MenuPage />} />
+{/* 
+        <Route path="business-menu">
+               <Route path=":menu_subscription " element={<MenuSubscription />} />
+          
+        </Route> */}
 
         <Route index element={<HomePage />} />
 

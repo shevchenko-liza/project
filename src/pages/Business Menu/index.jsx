@@ -10,9 +10,10 @@ import icon1 from './photo/icon1.jpg'
 
 import { Text } from '../../components/Text'
 import { Time } from './time'
-import {TrialLunch} from './trialLunch'
+
 
 import { HeaderStyle } from '../../store/slices/header-styles/component'
+import { TrialLunch } from './trial'
 
 
 export const BusinessMenu = () => {
