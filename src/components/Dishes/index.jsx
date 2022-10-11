@@ -1,4 +1,4 @@
-import { DISHES } from './mainDish'
+
 import { Item } from './Item'
 import classes from './styles.module.scss'
 
@@ -8,7 +8,8 @@ import { CATALOG } from '../../store/slices/catalog'
 
 export const Dishes = () => {
   const catalog = useSelector(CATALOG)
-    .filter(product => product.recommended)
+    .filter(catalog => catalog.status)
+
   return (
     <div className={classes.dishes}>
       {catalog.map((item, index) => (
@@ -19,6 +20,7 @@ export const Dishes = () => {
           photo={item.photo}
           price={item.price}
           id={item.id}
+         
         />
 
 

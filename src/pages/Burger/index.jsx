@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux'
 
 import { Dish } from '../../components/Dish'
 import { Order } from '../../pages/Burger/Order'
-import {Search} from '../../layout/search'
 import classes from '../../pages/Burger/styles.module.scss'
 
 import { CATALOG } from '../../store/slices/catalog'
@@ -21,13 +20,12 @@ export const BurgerPage = () => {
 
   return (
     <div>
-      
+
 
       <div className={classes.burger}>
         <div className={classes.photoBox}>
           <img className={classes.photo} src={burger.burger_photo} alt="" />
         </div>
-
         <div className={classes.infoBox}>
           <div className={classes.name}>{burger.name}</div>
           <span className={classes.weight}>{burger.weight} </span>
@@ -48,13 +46,10 @@ export const BurgerPage = () => {
             </div>
           )
           : null}
-    
-        <span className={classes.title}>Рекомендуемые блюда</span>
-      
-      </div>
 
+        <span className={classes.title}>Рекомендуемые блюда</span>
+      </div>
       <Dish />
-      <Search/>
     </div>
   )
 

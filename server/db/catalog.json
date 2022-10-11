@@ -10,7 +10,7 @@
         "weight": "400 грамм",
         "discription": "lorem10",
         "kind": "burgers",
-        "recommended": true,
+        "recommended": "all",
         "price": "от 110 грн"
     },
     {
@@ -33,7 +33,7 @@
             "кетчуп"
         ],
         "kind": "burgers",
-        "recommended": true
+        "recommended": "all"
     },
     {
         "id": 3,
@@ -45,7 +45,7 @@
         "photo": "/images/burgers/burger3.png",
         "weight": "200 грамм",
         "kind": "burgers",
-        "recommended": true
+        "recommended": "all"
     },
     {
         "id": 4,
@@ -53,7 +53,9 @@
         "price": "29 грн",
         "photo": "/images/burgers/icon1.png",
         "kind": "brazier",
-        "recommended": true
+        "recommended": "all",
+        "status": "true"
+
     },
     {
         "id": 5,
@@ -61,7 +63,9 @@
         "price": "60 грн",
         "photo": "/images/burgers/icon2.jpg",
         "kind": "burgers",
-        "recommended": true
+        "recommended": "all",
+        "status": "true"
+
     },
     {
         "id": 6,
@@ -69,7 +73,8 @@
         "price": "29 грн",
         "photo": "/images/burgers/icon3.png",
         "kind": "brazier",
-        "recommended": true
+        "recommended": "all",
+        "status": "true"
     },
     {
         "id": 7,
@@ -77,7 +82,7 @@
         "price": "37 грн",
         "photo": "/images/burgers/icon4.png",
         "kind": "brazier",
-        "recommended": true
+        "recommended": "all"
     },
     {
         "id": 8,
@@ -85,7 +90,7 @@
         "price": "25 грн",
         "photo": "/images/burgers/icon5.png",
         "kind": "brazier",
-        "recommended": true
+        "recommended": "all"
     },
     {
         "id": 9,
@@ -93,6 +98,6 @@
         "price": "54 грн",
         "photo": "/images/burgers/icon6.png",
         "kind": "brazier",
-        "recommended": true
+        "recommended": "all"
     }
 ]

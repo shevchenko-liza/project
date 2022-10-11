@@ -12,7 +12,6 @@ export const TrialLunch = () => {
             <div className={classes.order_lunch}>Заказать пробный обед</div>
             <div className={classes.advertising}>Хотите попробовать наши обеды? <br/>Закажите пробный бизнес ланч на один день!</div>
             <button type="submit" className={clsx(classes.button, classes.order)}>Заказать</button>
-
         </div>
     </div>
     )

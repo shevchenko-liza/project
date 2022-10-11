@@ -14,6 +14,7 @@ import { Time } from './time'
 
 import { HeaderStyle } from '../../store/slices/header-styles/component'
 import { TrialLunch } from './trial'
+import { Dishes } from '../../components/Dishes'
 
 
 export const BusinessMenu = () => {
@@ -39,6 +40,8 @@ export const BusinessMenu = () => {
                 </div>
             </div>
             <TrialLunch/>
+            <div className={clsx('container', classes.title)}>Рекомендуемые блюда</div>
+            <Dishes/>
             <Text/>
         </div>
 

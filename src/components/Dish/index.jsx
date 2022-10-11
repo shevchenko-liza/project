@@ -9,7 +9,8 @@ import classes from './styles.module.scss'
 
 export const Dish = () => {
   const catalog = useSelector(CATALOG)
-    .filter(product => product.recommended)
+    .filter(catalog => catalog.recommended)
+
 
   return (
     <div className={classes.dish}>

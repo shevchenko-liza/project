@@ -11,11 +11,12 @@ import icon8 from './photo/icon8.jpg'
 import icon9 from './photo/icon9.jpg'
 import icon10 from './photo/icon10.jpg'
 
+import clsx from 'clsx'
 export const Photo = () => {
     return (
         <div>
            
-
+           <div className={clsx('container')}>
             <div className={classes.box}>
                 <img src={icon2} alt="" className={classes.photo} />
             </div>
@@ -29,6 +30,7 @@ export const Photo = () => {
                 <img src={icon9} alt="" className={classes.photos} />
                 <img src={icon10} alt="" className={classes.photos} />
             </div>
+        </div>
         </div>
     )
 }

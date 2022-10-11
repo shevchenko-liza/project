@@ -21,7 +21,7 @@ export const Main = () => {
                 <img src={main} alt="" className={classes.mainPhoto} />
             </span>
             <div className={classes.mainDishes}>Рекомендуемые блюда</div>
-            <Dishes />
+           <Dishes/>
             <Text />
         </div>
     )

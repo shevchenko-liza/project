@@ -16,8 +16,8 @@ export const Restaurant = () => {
     // const { restaurant } = useParams()
 
     return (
-        <div>
-            <HeaderStyle className={classes.main} height="300px" background={`url(${main}) no-repeat center/100% `}  />
+        <div> 
+            <HeaderStyle height="300px" background={`url(${main}) no-repeat center/100% `} />
             <Photo />
             <Text />
             <Form />
