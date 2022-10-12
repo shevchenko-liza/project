@@ -16,7 +16,7 @@ import { BusinessMenu } from "./pages/Business Menu"
 
 import { catalogSlice } from './store/slices/catalog'
 import { Basket } from './pages/Basket'
-import {Text} from './components/Text'
+import { Text } from './components/Text'
 
 import { CART } from "./store/slices/cart"
 
@@ -35,10 +35,7 @@ const App = () => {
   useEffect(() => {
     fetch('/api/catalog')
       .then(response => response.json())
-      .then(data => {
-        console.log({ data });
-        dispatch(catalogSlice.actions.setList(data))
-      })
+      .then(data => dispatch(catalogSlice.actions.setList(data)))
   }, [dispatch])
 
   return (
@@ -47,7 +44,10 @@ const App = () => {
       <Menu />
       <Routes>
         <Route path="menu">
-          <Route path="business-menu" element={<BusinessMenu />} />
+          <Route path="business-menu">
+            <Route path=":menu_subscription" element={<MenuSubscription />} />
+            <Route index element={<BusinessMenu />} />
+          </Route>
           <Route path=":category" element={<CatalogPage />} />
           <Route index element={<Navigate to="/" />} />
         </Route>
@@ -60,11 +60,6 @@ const App = () => {
         <Route path="restaurant" element={<Restaurant />} />
 
         <Route path="menu-page" element={<MenuPage />} />
-{/* 
-        <Route path="business-menu">
-               <Route path=":menu_subscription " element={<MenuSubscription />} />
-          
-        </Route> */}
 
         <Route index element={<HomePage />} />
 

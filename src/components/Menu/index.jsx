@@ -1,5 +1,7 @@
+import clsx from 'clsx'
+
 import { Item } from './Item'
-import { Link } from 'react-router-dom'
+
 import icon1 from './icons/01.jpg'
 import icon2 from './icons/02.jpg'
 import icon3 from './icons/03.jpg'
@@ -9,7 +11,6 @@ import icon6 from './icons/06.jpg'
 import icon7 from './icons/07.jpg'
 
 import classes from './styles.module.scss'
-
 
 const ITEMS = [
   { href: '/menu/burgers', icon: icon1, caption: 'Бургеры' },
@@ -22,7 +23,7 @@ const ITEMS = [
 ]
 
 export const Menu = () => (
-  <nav className={classes.menu}>
+  <nav className={clsx('container', classes.menu)}>
     {ITEMS.map((item, index) => (
       <Item
         key={`Menu item: ${item.href} ${index}`}
@@ -34,5 +35,5 @@ export const Menu = () => (
 
     ))}
   </nav>
-  
+
 )

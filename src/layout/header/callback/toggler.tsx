@@ -9,8 +9,8 @@ export const CallBackToggler = () => {
     const handleToggleCallback = useCallback(() => dispatch(topFormSlice.actions.toggle(TopForm.CALLBACK)), [dispatch])
 
     return (
-        <div>
-            <button type="submit" onClick={handleToggleCallback} className={classes.buttonToggler}>Заказать обратный звонок</button>
-        </div>
+        <button type="submit" onClick={handleToggleCallback} className={classes.buttonToggler}>
+            <span className={classes.buttonTogglerText}>Заказать обратный звонок</span>
+        </button>
     )
 }

@@ -4,15 +4,11 @@ import clsx from 'clsx'
 
 import { useParams } from "react-router-dom"
 
-import main from './photo/phone.jpg'
 import icon1 from './photo/icon1.jpg'
-
 
 import { Text } from '../../components/Text'
 import { Time } from './time'
 
-
-import { HeaderStyle } from '../../store/slices/header-styles/component'
 import { TrialLunch } from './trial'
 import { Dishes } from '../../components/Dishes'
 
@@ -23,7 +19,6 @@ export const BusinessMenu = () => {
 
     return (
         <div >
-            <HeaderStyle height="410px" background={`url(${main}) no-repeat center/100% `} />
             <div className={clsx('container')}>
                 <div className={classes.block}>
                     <div className={classes.iconBox}>
@@ -39,12 +34,11 @@ export const BusinessMenu = () => {
                     <Time />
                 </div>
             </div>
-            <TrialLunch/>
+            <TrialLunch />
             <div className={clsx('container', classes.title)}>Рекомендуемые блюда</div>
-            <Dishes/>
-            <Text/>
+            <Dishes />
+            <Text />
         </div>
-
     )
 }
 

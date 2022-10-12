@@ -1,0 +1,124 @@
+.header.header {
+    margin: 45px auto 0;
+    width: 100%;
+    font-size: 15px;
+}
+
+.search {
+    position: absolute;
+    height: 80px;
+    width: 1200px;
+    border-radius: 10px;
+}
+
+.Callback {
+    width: 193px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    height: 100%;
+}
+
+.iconBox {
+    padding-right: 10px;
+    border-radius: 10px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.border_logo {
+    height: 126px;
+    width: 126px;
+    border-radius: 50%;
+}
+
+.logo {
+    border-radius: 0px;
+    height: 102px;
+    width: 175px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clock {
+    display: block;
+}
+
+.timeBlock {
+    margin-left: auto;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.phoneBox {
+    padding: 10px 27px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: currentColor;
+}
+
+.phone {
+    display: block;
+    border-radius: 0px;
+}
+
+.userPhone {
+    margin-left: 13px;
+    display: block;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    color: currentColor;
+    text-decoration: none;
+}
+
+.time {
+    margin-left: 10px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0px;
+}
+
+.socialNetworksBlock {
+    display: flex;
+    align-items: center;
+}
+
+.facebookBox {
+    padding: 10px 15px;
+    color: currentColor;
+}
+
+.facebook {
+    display: block;
+}
+
+.instagramBox {
+    padding: 10px 15px;
+    color: currentColor;
+}
+
+.instagram {
+    display: block;
+}

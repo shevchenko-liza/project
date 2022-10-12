@@ -5,9 +5,7 @@ import { useParams } from 'react-router-dom'
 import { Item } from './Item'
 
 import { CATALOG } from '../../store/slices/catalog'
-import { HeaderStyle } from '../../store/slices/header-styles/component'
 
-import burger from './photo/burgerBackground.jpg'
 import classes from './styles.module.scss'
 
 export const Burgers = () => {
@@ -15,11 +13,8 @@ export const Burgers = () => {
   const burgers = useSelector(CATALOG)
     .filter(burger => burger.kind === params.category)
 
-  console.log({ burgers });
-
   return (
     <div className={classes.burgers}>
-            <HeaderStyle height="410px"  background={`url(${burger}) no-repeat center/100% `} />
       {burgers.map((item) => (
         <Item
           key={item.id}
