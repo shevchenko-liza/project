@@ -9,7 +9,8 @@ import { TopForm } from '../top-form'
 import burgersBg from './photo/burgers-bg.jpg'
 import menuBg from './photo/menu-bg.jpg'
 import homeBg from './photo/video.png'
-
+import main from './photo/main.jpg'
+import bussinessBg from './photo/busMenu.jpg'
 import classes from './styles.module.scss'
 
 export const Header = () => (
@@ -29,18 +30,33 @@ export const Header = () => (
             <Title>Бургеры</Title>
           </header>
         )} />
-        <Route index element={(
+        <Route path="business-menu" element={(
           <header
             className={classes.header}
             style={{
               height: '400px',
-              background: `url(${menuBg}) center / cover no-repeat`,
+              background: `url(${bussinessBg}) center / cover no-repeat`,
             }}
           >
             <Navigation color="#474747" backgroundColor="#FFF" />
-            <Title>Меню</Title>
+            <Title>Бизнес меню</Title>
           </header>
         )} />
+         <Route path="business-menu">
+         <Route path="menu_subscription"
+         element={(
+          <header
+            className={classes.header}
+            style={{
+              height: '156px',
+              background: `#10B4A4`,
+            }}
+          >
+            <Navigation color="#474747" backgroundColor="#FFF" />
+          </header>
+        )} />
+        </Route>
+        
       </Route>
       <Route index element={(
         <header
@@ -50,10 +66,23 @@ export const Header = () => (
             background: `url(${homeBg}) center / cover no-repeat`,
           }}
         >
-          <Navigation />
+          <Navigation  />
           <HomeHeader />
         </header>
       )} />
+      <Route path="restaurant" element={(
+        <header
+          className={classes.header}
+          style={{
+            height: '400px',
+            background: `url(${main}) center / cover no-repeat`,
+          }}
+        >
+          <Navigation color="#474747" backgroundColor="#FFF" />
+          <Title>Ресторан</Title>
+        </header>
+      )} />
+
     </Routes>
   </>
 )

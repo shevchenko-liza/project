@@ -4,7 +4,7 @@ import classes from '../Main/styles.module.scss'
 import clsx from 'clsx'
 
 import { Dishes } from '../../../components/Dishes'
-import { Text } from '../../../components/Text'
+
 
 
 
@@ -22,7 +22,7 @@ export const Main = () => {
             </span>
             <div className={classes.mainDishes}>Рекомендуемые блюда</div>
             <Dishes />
-            <Text />
+            
         </div>
     )
 }

@@ -1,0 +1,266 @@
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 130px;
+    color: #474747;
+}
+
+.userBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 550px;
+}
+
+// .top {
+//     margin-top: 130px;
+// }
+.name {
+    height: 16px;
+    width: 29px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-bottom: 7px;
+}
+
+.userName {
+    height: 35px;
+    width: 250px;
+    border-radius: 5px;
+    border-color: #D8D8D8;
+}
+
+::-webkit-input-placeholder {
+    color: #D8D8D8;
+}
+
+.phone {
+    height: 16px;
+    width: 73px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-bottom: 7px;
+}
+
+.userPhone {
+    height: 35px;
+    width: 250px;
+    border-color: #D8D8D8;
+    border-radius: 5px;
+}
+
+.email {
+    height: 16px;
+    width: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-top: 15px;
+}
+
+.userEmail {
+    height: 35px;
+    width: 525px;
+    border-color: #D8D8D8;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+
+.paymentMethod {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 550px;
+    margin-top: 15px;
+}
+
+.payment {
+    height: 16px;
+    width: 102px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.options {
+    height: 35px;
+    width: 250px;
+    border-radius: 5px;
+    border-color: #D8D8D8;
+    margin-top: 7px;
+}
+
+.timeOfDelivery {
+    height: 16px;
+    width: 109px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.variant {
+    border-color: #D8D8D8;
+    height: 35px;
+    width: 250px;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+
+.address {
+    height: 16px;
+    width: 107px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-top: 18px;
+}
+
+.userAddress {
+    height: 125px;
+    width: 525px;
+    border-radius: 5px;
+    border-color: #D8D8D8;
+    margin-top: 7px;
+}
+
+.deliveryBlock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.title {
+    height: 16px;
+    width: 93px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.twoWeek,
+.oneWeek,
+.month {
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.NumberOfSets {
+    margin-left: 55px;
+    height: 16px;
+    width: 162px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.sets {
+    margin-left: 55px;
+    height: 35px;
+    width: 175px;
+    border-radius: 5px;
+    border-color: #D8D8D8;
+    margin-top: 5px;
+}
+
+.comments {
+    height: 16px;
+    width: 92px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-top: 20px;
+}
+
+.userComments {
+    margin-top: 5px;
+    height: 108px;
+    width: 525px;
+    border-radius: 5px;
+    border-color: #D8D8D8;
+}
+
+.setBlock {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 35px;
+}
+
+.set {
+    height: 18px;
+    width: 98px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #7E7E7E;
+}
+
+.total {
+    color: #474747;
+    height: 22px;
+    width: 134px;
+    font-family: Roboto;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 16px;
+}
+
+.price {
+    margin-right: auto;
+    margin-left: 165px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #7E7E7E;
+}
+
+.totalPrice {
+    margin-right: auto;
+    margin-left: 140px;
+    margin-top: 16px;
+    height: 22px;
+    font-family: Roboto;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #474747;
+}
+
+.buttonSubmit {
+    height: 48px;
+    width: 525px;
+    margin-top: 25px;
+    border-radius: 0px;
+    background-color: #10B4A4;
+    border-color: #10B4A4;
+    color: white;
+}
+
+.recommendedDishes {
+    margin-top: 90px;
+    height: 42px;
+    width: 404px;
+    color: #474747;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    margin-left: 383px;
+    margin-bottom: 17px;
+}
+
+.box {
+    margin-left: 20px;
+}

@@ -10,7 +10,7 @@ export const Time = () => {
                 <div className={classes.price}>750 грн</div>
             </div>
             <div className={classes.buttonBlock}>
-                <Link to={generatePath("/menu/business-menu/:menu_subscription", { menu_subscription: 'one-week' })}>
+                <Link to={generatePath("/menu/business-menu/:menu_subscription", { menu_subscription: 'menu_subscription' })}>
                     <button type="submit" className={clsx(classes.button, classes.order)}>Заказать</button>
                 </Link>
             </div>
@@ -20,7 +20,7 @@ export const Time = () => {
                 <div className={classes.price}>1250 грн</div>
             </div>
             <div className={classes.buttonBlock}>
-                <Link to={generatePath("/menu/business-menu/:menu_subscription", { menu_subscription: 'two-week' })}>
+                <Link to={generatePath("/menu/business-menu/:menu_subscription", { menu_subscription: 'menu_subscription' })}>
                     <button type="submit" className={clsx(classes.button, classes.order)}>Заказать</button>
                 </Link>
             </div>
@@ -30,7 +30,7 @@ export const Time = () => {
                 <div className={classes.price}>2000 грн</div>
             </div>
             <div className={classes.buttonBlock}>
-                <Link to={generatePath("/menu/business-menu/:menu_subscription", { menu_subscription: 'month' })}>
+                <Link to={generatePath("/menu/business-menu/:menu_subscription", { menu_subscription: 'menu_subscription' })}>
                     <button type="submit" className={clsx(classes.button, classes.order)}>Заказать</button>
                 </Link>
             </div>

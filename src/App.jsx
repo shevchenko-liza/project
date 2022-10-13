@@ -64,7 +64,7 @@ const App = () => {
         <Route index element={<HomePage />} />
 
       </Routes>
-
+<Text/>
       <Basket />
     </div>
 

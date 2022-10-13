@@ -1,7 +1,8 @@
 import classes from './styles.module.scss'
+import clsx from 'clsx'
 export const Text = () => {
     return (
-        <div className={classes.block}>
+        <div className={clsx('container', classes.header)}>
             <div className={classes.name}>Доставка еды в Запорожье</div>
             <div className={classes.text}>Доставка еды в Запорожье «Rock n Roll» это: вкусно, быстро и недорого. Именно на этих трех принципах работает Доставка еды на дом «Rock n Roll».
                 <br />
