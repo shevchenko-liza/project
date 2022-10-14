@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux"
 
 import { Header } from './layout/header'
 
-import { MenuPage } from "./pages/MenuPage"
+import { MainMenu } from "./pages/MainMenu"
 import { Menu } from './components/Menu'
 
 import { HomePage } from './pages/Home'
@@ -59,7 +59,7 @@ const App = () => {
 
         <Route path="restaurant" element={<Restaurant />} />
 
-        <Route path="menu-page" element={<MenuPage />} />
+        <Route path="menu_page" element={<MainMenu/>} />
 
         <Route index element={<HomePage />} />
 

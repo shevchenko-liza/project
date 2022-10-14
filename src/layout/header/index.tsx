@@ -82,7 +82,18 @@ export const Header = () => (
           <Title>Ресторан</Title>
         </header>
       )} />
-
+    <Route path="menu_page" element={(
+          <header
+            className={classes.header}
+            style={{
+              height: '400px',
+              background: `url(${menuBg}) center / cover no-repeat`,
+            }}
+          >
+            <Navigation color="#474747" backgroundColor="#FFF" />
+            <Title>Меню</Title>
+          </header>
+        )} />
     </Routes>
   </>
 )
