@@ -13,6 +13,7 @@ import main from './photo/main.jpg'
 import bussinessBg from './photo/busMenu.jpg'
 import classes from './styles.module.scss'
 
+
 export const Header = () => (
   <>
     <TopForm />
@@ -42,21 +43,21 @@ export const Header = () => (
             <Title>Бизнес меню</Title>
           </header>
         )} />
-         <Route path="business-menu">
-         <Route path="menu_subscription"
-         element={(
-          <header
-            className={classes.header}
-            style={{
-              height: '156px',
-              background: `#10B4A4`,
-            }}
-          >
-            <Navigation color="#474747" backgroundColor="#FFF" />
-          </header>
-        )} />
+        <Route path="business-menu">
+          <Route path="menu_subscription"
+            element={(
+              <header
+                className={classes.header}
+                style={{
+                  height: '156px',
+                  background: `#10B4A4`,
+                }}
+              >
+                <Navigation color="#474747" backgroundColor="#FFF" />
+              </header>
+            )} />
         </Route>
-        
+
       </Route>
       <Route index element={(
         <header
@@ -66,7 +67,7 @@ export const Header = () => (
             background: `url(${homeBg}) center / cover no-repeat`,
           }}
         >
-          <Navigation  />
+          <Navigation />
           <HomeHeader />
         </header>
       )} />
@@ -82,18 +83,32 @@ export const Header = () => (
           <Title>Ресторан</Title>
         </header>
       )} />
-    <Route path="menu_page" element={(
-          <header
-            className={classes.header}
-            style={{
-              height: '400px',
-              background: `url(${menuBg}) center / cover no-repeat`,
-            }}
-          >
-            <Navigation color="#474747" backgroundColor="#FFF" />
-            <Title>Меню</Title>
-          </header>
-        )} />
+      <Route path="menu_page" element={(
+        <header
+          className={classes.header}
+          style={{
+            height: '400px',
+            background: `url(${menuBg}) center / cover no-repeat`,
+          }}
+        >
+          <Navigation color="#474747" backgroundColor="#FFF" />
+          <Title>Меню</Title>
+        </header>
+      )} />
+      <Route path="burgers">
+        <Route path="/burgers:id"
+          element={(
+            <header
+              className={classes.header}
+              style={{
+                height: '156px',
+                background: `#10B4A4`,
+              }}
+            >
+              <Navigation color="#474747" backgroundColor="#FFF" />
+            </header>
+          )} />
+      </Route>
     </Routes>
   </>
 )

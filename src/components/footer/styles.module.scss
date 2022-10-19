@@ -1,0 +1,49 @@
+.header {
+    background-color: #474747;
+    height: 185px;
+    max-width: 100%;
+}
+
+.iconBox {
+    margin: auto;
+    width: 1600px;
+    display: flex;
+    position: relative;
+}
+
+.phoneBox {
+    margin-left: 571px;
+    margin-top: 48px;
+}
+
+.phone {
+    height: 16px;
+    width: 16px;
+    color: #DADADA;
+}
+
+.socialNetworkBox {
+    display: flex;
+    margin-left: 375px;
+    margin-top: 78px;
+    gap: 30px
+}
+
+.facebook {
+    color: #DADADA;
+    width: 20px;
+    height: 20px;
+}
+
+.instagram {
+    color: #DADADA;
+    width: 20px;
+    height: 20px;
+}
+
+.logoBox {
+    margin-left: 243px;
+    margin-top: 45px;
+    height: 61px;
+    width: 130px;
+}

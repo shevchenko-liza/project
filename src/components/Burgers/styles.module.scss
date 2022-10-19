@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 36px;
-    margin-top: 130px;
+    margin-top: 56px;
 }
 
 .item {
@@ -118,4 +118,44 @@
 .order {
     margin-left: auto;
     color: #363636;
+}
+
+.buttonBox {
+    padding-top: 89px;
+}
+
+.Mainbutton {
+    border: none;
+    background: transparent;
+    color: #0A6A60;
+    cursor: pointer;
+    height: 19px;
+    width: 61px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menuButton {
+    border: none;
+    background: transparent;
+    color: #0A6A60;
+    cursor: pointer;
+    height: 19px;
+    width: 45px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+.burgerButton {
+    border: none;
+    background: transparent;
+    color: #363636;
+    cursor: pointer;
+    height: 19px;
+    width: 64px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    margin-left: 25px;
 }

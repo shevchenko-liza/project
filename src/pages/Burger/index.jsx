@@ -1,6 +1,7 @@
-import { useParams } from 'react-router-dom'
+import { generatePath, Link, useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
+import clsx from 'clsx'
 
 import { Dish } from '../../components/Dish'
 import { Order } from '../../pages/Burger/Order'
@@ -20,8 +21,17 @@ export const BurgerPage = () => {
 
   return (
     <div>
-
-
+      <div className={clsx('container', classes.buttonBox)}>
+        <Link to="/">
+          <button type="submit" className={classes.Mainbutton}>Главная</button>
+        </Link>
+        <Link to={generatePath("/:menu_page", { menu_page: 'menu_page' })}>
+          <button type="submit" className={clsx(classes.menuButton)}>Меню</button>
+        </Link>
+        <Link to={generatePath("/burgers")}>
+          <button type="submit" className={classes.burgerButton}>Бургеры</button>
+        </Link>
+      </div>
       <div className={classes.burger}>
         <div className={classes.photoBox}>
           <img className={classes.photo} src={burger.burger_photo} alt="" />
@@ -33,7 +43,6 @@ export const BurgerPage = () => {
           <span className={classes.price}> {burger.price}</span>
           <Order id={id} />
         </div>
-
         {Array.isArray(burger.compound)
           ? (
             <div className={classes.border}>
@@ -46,7 +55,6 @@ export const BurgerPage = () => {
             </div>
           )
           : null}
-
         <span className={classes.title}>Рекомендуемые блюда</span>
       </div>
       <Dish />

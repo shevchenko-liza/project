@@ -46,7 +46,6 @@ export const Item = ({ name, compound, weight, photo, id, price }) => (
       <p className={classes.compound}>Состав: {(Array.isArray(compound) ? compound : []).join(', ')}</p>
       <span className={classes.weight}>{weight}</span>
       <div className={classes.price}>{price}</div>
-
       <Order id={id} />
     </div>
   </div>

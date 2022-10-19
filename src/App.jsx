@@ -16,12 +16,12 @@ import { BusinessMenu } from "./pages/Business Menu"
 
 import { catalogSlice } from './store/slices/catalog'
 import { Basket } from './pages/Basket'
-import { Text } from './components/Text'
 
 import { CART } from "./store/slices/cart"
 
 import './App.scss'
 import { MenuSubscription } from "./pages/MenuSubscription"
+import { Footer } from "./components/footer"
 
 const App = () => {
   const dispatch = useDispatch()
@@ -51,23 +51,17 @@ const App = () => {
           <Route path=":category" element={<CatalogPage />} />
           <Route index element={<Navigate to="/" />} />
         </Route>
-
         <Route path="burgers">
           <Route path=":id" element={<BurgerPage />} />
           <Route index element={<Navigate to="/" />} />
         </Route>
-
         <Route path="restaurant" element={<Restaurant />} />
-
-        <Route path="menu_page" element={<MainMenu/>} />
-
+        <Route path="menu_page" element={<MainMenu />} />
         <Route index element={<HomePage />} />
-
       </Routes>
-<Text/>
       <Basket />
+      <Footer/>
     </div>
-
   )
 }
 export default App

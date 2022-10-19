@@ -1,12 +1,13 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { useParams } from 'react-router-dom'
+import { generatePath, Link, useParams } from 'react-router-dom'
 
 import { Item } from './Item'
-
+import {Text} from '../Text'
 import { CATALOG } from '../../store/slices/catalog'
 
 import classes from './styles.module.scss'
+import clsx from 'clsx'
 
 export const Burgers = () => {
   const params = useParams()
@@ -14,18 +15,32 @@ export const Burgers = () => {
     .filter(burger => burger.kind === params.category)
 
   return (
-    <div className={classes.burgers}>
-      {burgers.map((item) => (
-        <Item
-          key={item.id}
-          id={item.id}
-          name={item.name}
-          compound={item.compound}
-          photo={item.photo}
-          weight={item.weight}
-          price={item.price}
-        />
-      ))}
+    <div>
+      <div className={clsx('container', classes.buttonBox)}>
+        <Link to="/">
+          <button type="submit" className={classes.Mainbutton}>Главная</button>
+        </Link>
+        <Link to={generatePath("/:menu_page", { menu_page: 'menu_page' })}>
+          <button type="submit" className={clsx(classes.menuButton)}>Меню</button>
+        </Link>
+        <Link to={generatePath("/burgers")}>
+          <button type="submit" className={classes.burgerButton}>Бургеры</button>
+        </Link>
+      </div>
+      <div className={classes.burgers}>
+        {burgers.map((item) => (
+          <Item
+            key={item.id}
+            id={item.id}
+            name={item.name}
+            compound={item.compound}
+            photo={item.photo}
+            weight={item.weight}
+            price={item.price}
+          />
+        ))}
+      </div>
+      <Text/>
     </div>
   )
 }

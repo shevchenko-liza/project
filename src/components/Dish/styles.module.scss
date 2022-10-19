@@ -1,9 +1,8 @@
 .dish {
     margin: auto;
-    max-width: 1200px;
+    width: 1200px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 22px;
 }
 
 .item {
@@ -17,7 +16,7 @@
 .photo {
     width: 290px;
     height: 250px;
-    margin-top: 45px;
+    margin-top: 42px;
 }
 
 .name {
