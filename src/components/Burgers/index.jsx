@@ -20,10 +20,10 @@ export const Burgers = () => {
         <Link to="/">
           <button type="submit" className={classes.Mainbutton}>Главная</button>
         </Link>
-        <Link to={generatePath("/:menu_page", { menu_page: 'menu_page' })}>
+        <Link to={generatePath("/menu_page", { menu_page: 'menu_page' })}>
           <button type="submit" className={clsx(classes.menuButton)}>Меню</button>
         </Link>
-        <Link to={generatePath("/burgers")}>
+        <Link to={generatePath("/menu/burgers")}>
           <button type="submit" className={classes.burgerButton}>Бургеры</button>
         </Link>
       </div>

@@ -1,20 +1,21 @@
     .burger {
         margin: auto;
         max-width: 1200px;
-        height: 375px;
-        margin-top: 217px;
         display: grid;
-        grid-template-columns: repeat(2, 400px);
-    }
-    
-    .photoBox {
-        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 106px;
+        gap: 25px;
     }
     
     .photo {
-        height: 305px;
-        width: 368px;
-        display: block;
+        height: 275px;
+        width: 328px;
+        margin-left: 40px;
+        border-radius: 10px;
+    }
+    
+    .infoBox {
+        margin-left: 20px;
     }
     
     .name {
@@ -25,85 +26,91 @@
         font-weight: 500;
         text-align: left;
         color: #474747;
-        margin-bottom: 12px;
     }
     
-    .compaunds {}
-    
     .weight {
+        height: 19px;
         width: 101px;
         font-family: Roboto;
         font-size: 16px;
         font-weight: 500;
-        line-height: 19px;
+        text-align: right;
         color: #D8D8D8;
+        margin-top: 12px;
     }
     
     .text {
-        margin-top: 21px;
-        margin-bottom: 36px;
-        width: 525px;
-        left: 375px;
-        top: 130px;
+        height: 80px;
+        width: 480px;
         font-family: Roboto;
         font-size: 14px;
         font-weight: 500;
-        line-height: 16px;
+        text-align: left;
         color: #363636;
+        margin-top: 21px;
+    }
+    
+    .priceBox {
+        margin-top: 36px;
+        display: flex;
+        background-color: #10B4A41A;
+        height: 78px;
+        width: 475px;
     }
     
     .price {
-        padding-left: 20px;
-        transform: translateY(83px);
-        position: absolute;
         height: 28px;
         width: 175px;
-        color: #474747;
         font-family: Roboto;
         font-size: 24px;
         font-weight: 700;
-        line-height: 28px;
-        letter-spacing: 0px;
+        text-align: left;
+        color: #474747;
+        margin-left: 20px;
+        margin-top: 25px;
     }
     
-    .compaunds {
-        font-family: Roboto;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 21px;
-        letter-spacing: 0px;
-        list-style: none
+    .border {
+        border: 1px dashed #D8D8D8;
+        height: 275px;
+        width: 250px;
     }
     
     .title {
-        margin-top: 140px;
+        margin-left: 98px;
+        height: 19px;
+        width: 54px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+        color: #363636;
+    }
+    
+    .titleDish {
+        margin: auto;
+        margin-top: 100px;
         height: 42px;
         width: 404px;
         font-family: Roboto;
         font-size: 36px;
         font-weight: 500;
-        line-height: 42px;
-        letter-spacing: 0px;
+        text-align: left;
         color: #474747;
+        margin-bottom: 22px;
     }
     
-    .border {
-        height: 315px;
-        width: 250px;
-        border-radius: 0px;
-        border: 1px dashed #D8D8D8;
-        margin-left: 930px;
-        transform: translateY(-330px);
+    .box {
+        margin-left: 20px;
     }
     
     .compounds {
         font-family: Roboto;
         font-size: 14px;
-        font-weight: 500;
         line-height: 21px;
-        letter-spacing: 0px;
-        list-style: none;
-        width: 200px;
+        font-weight: 400;
+        text-align: left;
+        color: #363636;
     }
     
     .buttonBox {

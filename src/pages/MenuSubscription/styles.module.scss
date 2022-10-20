@@ -1,7 +1,7 @@
 .header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 130px;
+    padding-top: 100px;
     color: #474747;
 }
 
@@ -11,9 +11,6 @@
     max-width: 550px;
 }
 
-// .top {
-//     margin-top: 130px;
-// }
 .name {
     height: 16px;
     width: 29px;
@@ -156,7 +153,7 @@
 }
 
 .NumberOfSets {
-    margin-left: 55px;
+    margin-left: 85px;
     height: 16px;
     width: 162px;
     font-size: 14px;
@@ -165,7 +162,7 @@
 }
 
 .sets {
-    margin-left: 55px;
+    margin-left: 85px;
     height: 35px;
     width: 175px;
     border-radius: 5px;
@@ -237,6 +234,7 @@
     font-weight: 500;
     line-height: 22px;
     color: #474747;
+    border: transparent;
 }
 
 .buttonSubmit {
@@ -247,6 +245,7 @@
     background-color: #10B4A4;
     border-color: #10B4A4;
     color: white;
+    border: transparent;
 }
 
 .recommendedDishes {
@@ -262,5 +261,49 @@
 }
 
 .box {
+    margin-left: 100px;
+    margin-top: 5px;
+}
+
+.top {
     margin-left: 20px;
+}
+
+.buttonBox {
+    padding-top: 89px;
+}
+
+.Mainbutton {
+    border: none;
+    background: transparent;
+    color: #0A6A60;
+    cursor: pointer;
+    height: 19px;
+    width: 61px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menuButton {
+    border: none;
+    background: transparent;
+    color: #0A6A60;
+    cursor: pointer;
+    height: 19px;
+    width: 45px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+.bsButton {
+    border: none;
+    background: transparent;
+    color: #363636;
+    cursor: pointer;
+    height: 19px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    margin-left: 25px;
 }

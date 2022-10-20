@@ -1,7 +1,7 @@
 .block {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 130px;
+    margin-top: 103px;
 }
 
 .picture {
@@ -38,5 +38,44 @@
     font-size: 36px;
     font-weight: 500;
     line-height: 42px;
-    letter-spacing: 0px;
+    color: #474747;
+}
+
+.buttonBox {
+    padding-top: 89px;
+}
+
+.Mainbutton {
+    border: none;
+    background: transparent;
+    color: #0A6A60;
+    cursor: pointer;
+    height: 19px;
+    width: 61px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menuButton {
+    border: none;
+    background: transparent;
+    color: #0A6A60;
+    cursor: pointer;
+    height: 19px;
+    width: 45px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+.bsButton {
+    border: none;
+    background: transparent;
+    color: #363636;
+    cursor: pointer;
+    height: 19px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    margin-left: 25px;
 }

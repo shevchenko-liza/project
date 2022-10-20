@@ -2,24 +2,36 @@ import classes from './styles.module.scss'
 
 import clsx from 'clsx'
 
-import { useParams } from "react-router-dom"
+import { generatePath, Link, useParams } from "react-router-dom"
 
 import icon1 from './photo/icon1.jpg'
 
 
 import { Time } from './time'
-
+import { Text } from '../../components/Text'
 import { TrialLunch } from './trial'
 import { Dishes } from '../../components/Dishes'
 
 
 export const BusinessMenu = () => {
+
     const { business_menu } = useParams()
     console.log({ business_menu });
 
     return (
         <div >
             <div className={clsx('container')}>
+                <div className={clsx('container', classes.buttonBox)}>
+                    <Link to="/">
+                        <button type="submit" className={classes.Mainbutton}>Главная</button>
+                    </Link>
+                    <Link to={generatePath("/menu_page")}>
+                        <button type="submit" className={clsx(classes.menuButton)}>Меню</button>
+                    </Link>
+                    <Link to={generatePath("/menu/business-menu")}>
+                        <button type="submit" className={classes.bsButton}>Бизнес меню</button>
+                    </Link>
+                </div>
                 <div className={classes.block}>
                     <div className={classes.iconBox}>
                         <img src={icon1} alt="#" className={classes.picture} />
@@ -37,7 +49,7 @@ export const BusinessMenu = () => {
             <TrialLunch />
             <div className={clsx('container', classes.title)}>Рекомендуемые блюда</div>
             <Dishes />
-            
+            <Text />
         </div>
     )
 }
