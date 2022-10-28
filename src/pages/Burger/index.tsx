@@ -4,20 +4,22 @@ import { useSelector } from 'react-redux'
 import clsx from 'clsx'
 
 import { Dish } from '../../components/Dish'
-import { Order } from '../../pages/Burger/Order'
+import { Order } from './Order'
 import { Text } from '../../components/Text'
 
 import classes from '../../pages/Burger/styles.module.scss'
 
-import { CATALOG } from '../../store/slices/catalog'
+import { CATALOG, Product } from '../../store/slices/catalog'
+import React, { FC } from 'react'
+
 
 export const BurgerPage = () => {
-  const { id } = useParams()
+  const { id }= useParams()
 
   const burgers = useSelector(CATALOG)
-  const burger = burgers.find(burger => burger.id === parseInt(id))
+  const burger = burgers.find(burger => id!==undefined && burger.id === parseInt(id))
 
-  if (!burger) {
+  if (!burger || id===undefined) {
     return false
   }
 
@@ -47,7 +49,8 @@ export const BurgerPage = () => {
             <div className={classes.text}>{burger.text}</div>
             <div className={classes.priceBox}>
               <div className={classes.price}> {burger.price}</div>
-              <Order id={id} />
+              <div className={classes.key}> {burger.key}</div>
+              <Order id={parseInt(id)} />
             </div>
           </div>
         </div>
@@ -67,7 +70,7 @@ export const BurgerPage = () => {
         </div>
       </div>
       <div className={classes.titleDish}>Рекомендуемые блюда</div>
-      <Dish />
+      <Dish/>
       <Text />
     </div>
   )

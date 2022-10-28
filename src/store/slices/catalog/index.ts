@@ -15,6 +15,8 @@ export interface Product {
     compound: string[]
     kind: string
     recommended: boolean
+    status:boolean
+    key:string
 }
 
 interface CatalogState {

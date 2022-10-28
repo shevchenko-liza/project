@@ -23,17 +23,18 @@
 }
 
 .name {
-    margin-top: 10px;
+    padding-top: 10px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: #363636;
+    width: 245px;
     height: 41px;
-    width: 240px;
-    font-family: Roboto;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
     font-size: 16px;
     font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0px;
-    color: #363636;
-    text-align: center;
-    margin-left: 30px;
 }
 
 .kind {

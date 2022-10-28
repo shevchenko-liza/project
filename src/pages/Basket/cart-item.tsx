@@ -11,7 +11,7 @@ import icon2 from './photo/border.png'
 import classes from './styles.module.scss'
 
 interface CartItemProps {
-  id: number | `${number}`
+  id: number
 }
 
 const number = (value: string) => parseInt(value, 10) || 1

@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import React, { FC, useCallback } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 import { BasketHeader } from './BasketHeader'
@@ -16,13 +16,11 @@ import classes from './styles.module.scss'
 
 import clsx from 'clsx'
 
-
 export const Basket = () => {
   const dispatch = useDispatch()
   const cart = useSelector(CART)
 
   const handleToggle = useCallback(() => dispatch(cartSlice.actions.toggle()), [dispatch])
-
 
   return (
     <div className={clsx(classes.backdrop, { [classes.hide]: !cart.opened })}>
@@ -33,7 +31,7 @@ export const Basket = () => {
           </button>
           <div className={classes.basket}>Корзина</div>
           {Object.keys(cart.list).map(id => (
-            <CartItem key={`CartItem-${id}`} id={id} />
+            <CartItem key={`CartItem${id}`} id={parseInt(id)} />
           ))}
           <BasketHeader />
           <FreeDelivery />

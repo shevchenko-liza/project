@@ -20,13 +20,8 @@ export const Dishes = () => {
           photo={item.photo}
           price={item.price}
           id={item.id}
-         
         />
-
-
       ))}
-
     </div>
-
   )
 }

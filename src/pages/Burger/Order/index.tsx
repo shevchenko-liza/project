@@ -1,20 +1,22 @@
-import { useCallback, useState } from 'react'
+import React, { FC, SetStateAction, useCallback, useState } from 'react'
 
 import clsx from 'clsx'
 
 import classes from '../Order/styles.module.scss'
 
-
-export const Order = ({ id }) => {
+interface OrderProps {
+  id: number | `${number}`
+}
+export const Order:FC<OrderProps> = ({ id }) => {
   const [amount, setAmount] = useState(0);
   const decrease = useCallback(() => setAmount((amount) => amount - 1), []);
   const increase = useCallback(() => setAmount((amount) => amount + 1), [])
 
-  const handleChange = useCallback(event => {
+  const handleChange = useCallback((event:React.ChangeEventHandler<HTMLInputElement>) => {
     setAmount(event.target.value)
   }, [])
 
-  const handleSubmit = useCallback(event => {
+  const handleSubmit = useCallback((event:React.FormEventHandler<HTMLFormElement> ) => {
     event.preventDefault()
 
     console.log({ amount, id })
@@ -25,7 +27,7 @@ export const Order = ({ id }) => {
       <form className={classes.form} onSubmit={handleSubmit}>
         <div className={classes.inputBox}>
           <button type="button" onClick={decrease} className={clsx(classes.button, classes.decrease)} value="-">-</button>
-          <input type="text" size="3" className={classes.input} value={amount} onChange={handleChange} />
+          <input type="text" size={3} className={classes.input} value={amount} onChange={handleChange} />
           <button type="button" onClick={increase} className={clsx(classes.button, classes.increase)} value="+">+</button>
         </div>
       </form>

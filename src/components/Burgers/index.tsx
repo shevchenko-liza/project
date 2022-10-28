@@ -28,16 +28,16 @@ export const Burgers = () => {
         </Link>
       </div>
       <div className={classes.burgers}>
-        {burgers.map((item) => (
+        {burgers.map((item,index) => (
           <Item
-            key={item.id}
+            key={`${item.id}`}
             id={item.id}
             name={item.name}
             compound={item.compound}
             photo={item.photo}
             weight={item.weight}
             price={item.price}
-          />
+             />
         ))}
       </div>
       <Text/>

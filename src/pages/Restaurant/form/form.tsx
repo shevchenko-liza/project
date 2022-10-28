@@ -2,6 +2,7 @@ import classes from './styles.module.scss'
 import form from '../photo/form.jpg'
 import clsx from 'clsx'
 import background from '../photo/background.jpg'
+import { FC } from 'react'
 export const Form = () => {
   return (
     <div>
@@ -46,7 +47,6 @@ export const Form = () => {
       <div className={classes.bottomBackground}>
         <img src={background} className={classes.background}/>
       </div>
- 
     </div>
   )
 }              
