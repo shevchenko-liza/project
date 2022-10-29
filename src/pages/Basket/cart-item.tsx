@@ -9,9 +9,11 @@ import icon1 from './photo/delete.png'
 import icon2 from './photo/border.png'
 
 import classes from './styles.module.scss'
+import { formatCurrency } from './formatCurrency'
 
 interface CartItemProps {
-  id: number
+  id: number | `${number}`
+
 }
 
 const number = (value: string) => parseInt(value, 10) || 1
@@ -39,7 +41,7 @@ export const CartItem: FC<CartItemProps> = ({ id }) => {
         <div className={classes.infoBox}>
           <div className={classes.title}>{product.name} </div>
 
-          <div className={classes.price}> {product.price}</div>
+          <div className={classes.price}> {formatCurrency(parseFloat(product.price))}</div>
         </div>
         <div className={classes.form}>
           <div className={classes.inputBox}>

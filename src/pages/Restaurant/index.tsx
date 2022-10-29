@@ -6,7 +6,6 @@ import map from './photo/map.jpg'
 
 import classes from './styles.module.scss'
 
-
 export const Restaurant = () => (
     <div>
         <Photo />

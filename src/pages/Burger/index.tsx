@@ -68,7 +68,7 @@ export const BurgerPage = () => {
         </div>
       </div>
       <div className={classes.titleDish}>Рекомендуемые блюда</div>
-      <Dish key={''} id={0} name={''} photo={''} burger_photo={''} weight={''} text={''} price={''} compound={[]} kind={''} recommended={false} status={false} />
+      <Dish key={''} id={0} name={''} photo={''} burger_photo={''} weight={''} text={''} price={""} compound={[]} kind={''} recommended={false} status={false} />
       <Text />
     </div>
   )

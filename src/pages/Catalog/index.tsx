@@ -1,5 +1,5 @@
 import { Burgers } from '../../components/Burgers'
-import { Basket } from '../../pages/Basket'
+import { Basket } from '../Basket'
 
 
 export const CatalogPage = () => (

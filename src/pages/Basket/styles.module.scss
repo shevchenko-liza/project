@@ -12,8 +12,12 @@
 }
 
 .icon {
+    display: flex;
+    align-items: center;
+    margin: auto;
     height: 25px;
     width: 30px;
+    margin-top: 15px;
 }
 
 .cart {
@@ -197,4 +201,20 @@
     width: 451px;
     margin-left: 50px;
     text-align: center;
+}
+
+.borderR {
+    border-radius: 50%;
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.borderNum {
+    color: white;
 }

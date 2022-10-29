@@ -45,7 +45,8 @@
         "photo": "/images/burgers/burger3.png",
         "weight": "200 грамм",
         "kind": "burgers",
-        "recommended": "all"
+        "recommended": "all",
+        "price": "12190 грн"
     },
     {
         "id": 4,
