@@ -8,14 +8,14 @@ import { CATALOG, Product } from '../../store/slices/catalog'
 import classes from './styles.module.scss'
 
 
-export const Dish:React.FC<Product> = () => {
+export const Dish: React.FC<Product> = () => {
   const catalog = useSelector(CATALOG)
     .filter(catalog => catalog.recommended)
   return (
     <div className={classes.dish}>
-      {catalog.map((item ,index ) => (
+      {catalog.map((item, index) => (
         <Item
-        key={`${item.id}`}
+          key={`${item.id}`}
           id={item.id}
           name={item.name}
           price={item.price}

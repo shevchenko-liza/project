@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import { generatePath, Link, useParams } from 'react-router-dom'
 
 import { Item } from './Item'
-import {Text} from '../Text'
+import { Text } from '../Text'
 import { CATALOG } from '../../store/slices/catalog'
 
 import classes from './styles.module.scss'
@@ -28,7 +28,7 @@ export const Burgers = () => {
         </Link>
       </div>
       <div className={classes.burgers}>
-        {burgers.map((item,index) => (
+        {burgers.map((item, index) => (
           <Item
             key={`${item.id}`}
             id={item.id}
@@ -37,10 +37,10 @@ export const Burgers = () => {
             photo={item.photo}
             weight={item.weight}
             price={item.price}
-             />
+          />
         ))}
       </div>
-      <Text/>
+      <Text />
     </div>
   )
 }

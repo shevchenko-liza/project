@@ -10,22 +10,18 @@ import { Product } from '../../../store/slices/catalog'
 
 import classes from '../styles.module.scss'
 
-interface ItemProps {
-  id: number | `${number}`
-  };
-    
-export const Order:FC<ItemProps> = ({ id }) => {
+export const Order: FC<Pick<Product, 'id'>> = ({ id }) => {
   const dispatch = useDispatch()
 
   const [amount, setAmount] = useState(0);
   const decrease = useCallback(() => setAmount((amount) => amount - 1), []);
   const increase = useCallback(() => setAmount((amount) => amount + 1), [])
 
-  const handleChange = useCallback<ChangeEventHandler<HTMLInputElement>>((event ) => {
+  const handleChange = useCallback<ChangeEventHandler<HTMLInputElement>>((event) => {
     setAmount(parseFloat(event.target.value))
   }, [])
 
-  const handleSubmit = useCallback((event:React.FormEvent<HTMLFormElement> ) => {
+  const handleSubmit = useCallback((event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
     dispatch(cartSlice.actions.set({ id, count: amount }))
@@ -43,13 +39,15 @@ export const Order:FC<ItemProps> = ({ id }) => {
   )
 }
 
-export const Item:React.FC<Omit<Product, 'burger_photo' | 'text'>> = ({ name, compound, weight, photo, id, price,key }) => (
+interface ItemProps extends Omit<Product, 'burger_photo' | 'text' | 'kind' | 'recommended' | 'status'> { }
+
+export const Item: React.FC<ItemProps> = ({ name, compound, weight, photo, id, price, key }) => (
   <div className={classes.item}>
     <div className={classes.photoBox}>
       <img className={classes.photo} src={photo} alt="" />
     </div>
     <div className={classes.infoBox}>
-      <Link to={generatePath("/burgers/:id",{ id: id!==undefined ? `${id}`: undefined })} className={classes.name}>{name} </Link>
+      <Link to={generatePath("/burgers/:id", { id: id !== undefined ? `${id}` : undefined })} className={classes.name}>{name} </Link>
       <p className={classes.compound}>Состав: {(Array.isArray(compound) ? compound : []).join(', ')}</p>
       <span className={classes.weight}>{weight}</span>
       <div className={classes.price}>{price}</div>

@@ -9,18 +9,16 @@ import { Text } from '../../components/Text'
 
 import classes from '../../pages/Burger/styles.module.scss'
 
-import { CATALOG, Product } from '../../store/slices/catalog'
-import React, { FC } from 'react'
-
+import { CATALOG } from '../../store/slices/catalog'
 
 export const BurgerPage = () => {
-  const { id }= useParams()
+  const { id } = useParams()
 
   const burgers = useSelector(CATALOG)
-  const burger = burgers.find(burger => id!==undefined && burger.id === parseInt(id))
+  const burger = burgers.find(burger => id !== undefined && burger.id === parseInt(id))
 
-  if (!burger || id===undefined) {
-    return false
+  if (!burger || id === undefined) {
+    return null
   }
 
   return (
@@ -70,7 +68,7 @@ export const BurgerPage = () => {
         </div>
       </div>
       <div className={classes.titleDish}>Рекомендуемые блюда</div>
-      <Dish/>
+      <Dish key={''} id={0} name={''} photo={''} burger_photo={''} weight={''} text={''} price={''} compound={[]} kind={''} recommended={false} status={false} />
       <Text />
     </div>
   )

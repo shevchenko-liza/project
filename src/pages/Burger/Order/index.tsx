@@ -7,16 +7,17 @@ import classes from '../Order/styles.module.scss'
 interface OrderProps {
   id: number | `${number}`
 }
-export const Order:FC<OrderProps> = ({ id }) => {
+
+export const Order: FC<OrderProps> = ({ id }) => {
   const [amount, setAmount] = useState(0);
   const decrease = useCallback(() => setAmount((amount) => amount - 1), []);
   const increase = useCallback(() => setAmount((amount) => amount + 1), [])
 
-  const handleChange = useCallback((event:React.ChangeEventHandler<HTMLInputElement>) => {
-    setAmount(event.target.value)
+  const handleChange = useCallback<React.ChangeEventHandler<HTMLInputElement>>((event) => {
+    setAmount(parseFloat(event.target.value))
   }, [])
 
-  const handleSubmit = useCallback((event:React.FormEventHandler<HTMLFormElement> ) => {
+  const handleSubmit = useCallback((event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
     console.log({ amount, id })
@@ -34,7 +35,6 @@ export const Order:FC<OrderProps> = ({ id }) => {
       <button type="submit" className={clsx(classes.button, classes.order)}>Заказать</button>
     </div>
   )
-
 }
 
 

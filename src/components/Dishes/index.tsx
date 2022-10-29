@@ -14,7 +14,7 @@ export const Dishes = () => {
     <div className={classes.dishes}>
       {catalog.map((item, index) => (
         <Item
-          key={item.id}
+          key={`${item.id}`}
           name={item.name}
           kind={item.kind}
           photo={item.photo}

@@ -17,8 +17,8 @@ export const Order: FC<OrderProps> = ({ id }) => {
   const decrease = useCallback(() => setAmount((amount) => amount - 1), []);
   const increase = useCallback(() => setAmount((amount) => amount + 1), [])
 
-  const handleChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
-    setAmount(event.target.value)
+  const handleChange = useCallback<React.ChangeEventHandler<HTMLInputElement>>((event) => {
+    setAmount(parseFloat(event.target.value))
   }, [])
 
   const handleSubmit = useCallback((event: any) => {
@@ -26,6 +26,7 @@ export const Order: FC<OrderProps> = ({ id }) => {
 
     dispatch(cartSlice.actions.set({ id, count: amount }))
   }, [amount, id, dispatch])
+
   return (
     <div className={classes.block}>
       <form className={classes.form} onSubmit={handleSubmit}>
@@ -35,14 +36,14 @@ export const Order: FC<OrderProps> = ({ id }) => {
           <button type="button" onClick={increase} className={clsx(classes.button, classes.increase)} value="+">+</button>
         </div>
         <button type="submit" className={clsx(classes.button, classes.order)}>Заказать</button>
-
       </form>
     </div>
   )
-
 }
 
-export const Item: FC<Product> = ({ name, price, photo, id, kind,key }) => (
+interface ItemProps extends Omit<Product, 'burger_photo' | 'text' | 'recommended' | 'status' | 'weight' | 'compound'> { }
+
+export const Item: FC<ItemProps> = ({ name, price, photo, id, kind, key }) => (
   <div>
     <div className={classes.infoBox}>
       <img className={classes.photo} src={photo} alt="" />
