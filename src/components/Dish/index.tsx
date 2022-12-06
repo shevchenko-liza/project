@@ -7,8 +7,7 @@ import { CATALOG, Product } from '../../store/slices/catalog'
 
 import classes from './styles.module.scss'
 
-
-export const Dish: React.FC<Product> = () => {
+export const Dish= () => {
   const catalog = useSelector(CATALOG)
     .filter(catalog => catalog.recommended)
   return (

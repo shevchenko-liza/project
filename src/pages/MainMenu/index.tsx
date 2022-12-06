@@ -12,7 +12,7 @@ export const MainMenu = () => {
     return (
         <div className={clsx('container')}>
             <Menu />
-            <Dish name={''} key={""} id={0} photo={""} burger_photo={""} weight={""} text={""} price={""} compound={[]} kind={""} recommended={false} status={false} />
+            <Dish />
             <Text />
         </div>
     )

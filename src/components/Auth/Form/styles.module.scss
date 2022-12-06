@@ -1,0 +1,64 @@
+.title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 30px;
+    color: rgb(70, 66, 66);
+    font-size: 25px;
+}
+
+.form {
+    color: aqua;
+    display: grid;
+    font-size: 15px;
+    gap: 10px;
+    justify-content: flex-start;
+    grid-template-columns: auto minmax( auto, 350px);
+}
+
+.formblock {
+    height: 30px;
+}
+
+.name {
+    font-size: 20px;
+    color: black;
+}
+
+.wrapper {
+    position: relative;
+    background: white;
+    border: 1px solid black;
+    display: flex;
+    background-color: rgb(237, 227, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 280px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.back,
+.next {
+    width: 70px;
+    height: 30px;
+    background-color: rgb(172, 172, 195);
+    border: transparent;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.step {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+    margin-bottom: -40px;
+}

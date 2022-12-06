@@ -6,18 +6,27 @@ import { generatePath, Link, useParams } from "react-router-dom"
 
 import icon1 from './photo/icon1.jpg'
 
-
 import { Time } from './time'
 import { Text } from '../../components/Text'
 import { TrialLunch } from './trial'
 import { Dishes } from '../../components/Dishes'
 
+type Key = {
+    key: any
+}
+
+export const bisMenu = ({ key }: Key) => (
+    <ul>
+        {key.map((item: any) =>
+            <li key={item.id} >
+            </li>
+        )}
+    </ul>
+)
 
 export const BusinessMenu = () => {
-
     const { business_menu } = useParams()
     console.log({ business_menu });
-
     return (
         <div >
             <div className={clsx('container')}>
@@ -53,4 +62,6 @@ export const BusinessMenu = () => {
         </div>
     )
 }
+
+// interface ItemProps extends Omit<Product, 'burger_photo' | 'text' | 'recommended' | 'status' | 'weight' | 'compound' | 'id' |'photo'|'name'> { }
 

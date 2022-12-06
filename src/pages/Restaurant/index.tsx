@@ -2,25 +2,31 @@ import { Text } from './text'
 import { Photo } from './photo'
 import { Form } from './form/form'
 
-import map from './photo/map.jpg'
+import mapp from './photo/map.jpg'
 
 import classes from './styles.module.scss'
 
-export const Restaurant = () => (
-    <div>
-        <Photo />
-        <Text />
-        <Form />
-        <img src={map} className={classes.map} />
-    </div>
+type KeyRest = {
+    key: any
+}
+
+export const rest = ({ key }: KeyRest) => (
+    <ul>
+        {key.map((item:any) =>
+            <li key={item.id} >
+            </li>
+        )}
+    </ul>
 )
-// export function RestKey(props:any) {
-//   const key = (
-//     <ul>
-//       {props.restaurant.map((item:any) =>
-//         <li key={item.id}>
-//         </li>
-//       )}
-//     </ul>
-//   );
-//       }
+
+export const Restaurant = () => {
+    return (
+        <div>
+            <Photo />
+            <Text />
+            <Form />
+            <img src={mapp} className={classes.map} />
+        </div>
+    )
+}
+

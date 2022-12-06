@@ -1,0 +1,56 @@
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.box {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.toggler {
+    position: absolute;
+    margin: 50px 1350px;
+    cursor: pointer;
+}
+
+// .backdrop {
+//     width: 100%;
+//     height: 100vh;
+//     display: flex;
+//     align-items: center;
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     background-color: rgba(0, 0, 0, .5);
+//     overflow: hidden;
+//     transition: .15s ease-in-out background-color;
+// }
+// .cart {
+//     top: 10%;
+//     margin-left: auto;
+//     width: 300px;
+//     max-width: 550px;
+//     height: 350px;
+//     background-color: #fff;
+//     pointer-events: auto;
+//     transform: translate(100%);
+//     transition: .15s ease-in-out transform;
+//     position: relative;
+//     // overflow: scroll;
+// }
+// .open {
+//     transform: translateX(0);
+// }
+// .hide {
+//     background-color: transparent;
+//     pointer-events: none;
+// }
+// .toggler {
+//     position: absolute;
+//     top: 10px;
+//     left: -700px;
+//     height: 60px;
+//     width: 60px;
+//     cursor: pointer;
+// }

@@ -12,8 +12,6 @@ import homeBg from './photo/video.png'
 import main from './photo/main.jpg'
 import bussinessBg from './photo/busMenu.jpg'
 import classes from './styles.module.scss'
-import { Open } from '../../Open'
-
 
 export const Header = () => (
   <>
@@ -91,7 +89,6 @@ export const Header = () => (
             background: `url(${menuBg}) center / cover no-repeat`,
           }}
         >
-          <Open />
           <Navigation color="#474747" backgroundColor="#FFF" />
           <Title>Меню</Title>
         </header>

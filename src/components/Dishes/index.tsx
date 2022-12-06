@@ -1,10 +1,10 @@
-
 import { Item } from './Item'
+import { CATALOG, Product } from '../../store/slices/catalog'
+
 import classes from './styles.module.scss'
 
 import { useSelector } from 'react-redux'
-
-import { CATALOG } from '../../store/slices/catalog'
+import { FC } from 'react'
 
 export const Dishes = () => {
   const catalog = useSelector(CATALOG)

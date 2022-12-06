@@ -13,7 +13,6 @@ import { formatCurrency } from './formatCurrency'
 
 interface CartItemProps {
   id: number | `${number}`
-
 }
 
 const number = (value: string) => parseInt(value, 10) || 1
@@ -25,9 +24,11 @@ export const CartItem: FC<CartItemProps> = ({ id }) => {
   const product = useSelector(CATALOG_TABLE)[id]
 
   const decrease = useCallback(() => dispatch(cartSlice.actions.decrease(id)), [dispatch, id])
+
   const handleChange = useCallback<ChangeEventHandler<HTMLInputElement>>(event => {
     dispatch(cartSlice.actions.set({ id: product.id, count: number(event.target.value) }))
   }, [dispatch, product.id])
+  
   const increase = useCallback(() => dispatch(cartSlice.actions.increase(id)), [dispatch, id])
 
   const handleDelete = useCallback(() => dispatch(cartSlice.actions.unset(id)), [dispatch, id])
@@ -40,7 +41,6 @@ export const CartItem: FC<CartItemProps> = ({ id }) => {
         </div>
         <div className={classes.infoBox}>
           <div className={classes.title}>{product.name} </div>
-
           <div className={classes.price}> {formatCurrency(parseFloat(product.price))}</div>
         </div>
         <div className={classes.form}>

@@ -16,7 +16,6 @@ import classes from './styles.module.scss'
 
 import clsx from 'clsx'
 
-
 export const Basket = () => {
   const dispatch = useDispatch()
   const cart = useSelector(CART)
@@ -29,9 +28,9 @@ export const Basket = () => {
         <div style={{ maxHeight: '100vh', overflow: 'auto' }}>
           <button className={classes.toggler} onClick={handleToggle}>
             <img src={path} className={classes.icon} />
-            <div className={classes.borderR}>
+            {/* <div className={classes.borderR}>
             <div className= {classes.borderNum }>{}</div>
-            </div>
+            </div> */}
           </button>
           <div className={classes.basket}>Корзина</div>
           {Object.keys(cart.list).map(id => (

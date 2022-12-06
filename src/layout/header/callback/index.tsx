@@ -13,7 +13,6 @@ export const Callback = () => {
 
   const handleClose = useCallback(() => dispatch(topFormSlice.actions.close()), [dispatch])
 
-
   return (
     <div className={classes.wrapper}>
       <form className={clsx('container', classes.form)}>
